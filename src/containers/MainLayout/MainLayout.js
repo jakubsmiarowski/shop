@@ -1,11 +1,10 @@
 import React from "react";
-
-import { Header } from "../../features/Header/Header";
+import { Header } from "../Header/Header";
 
 export class MainLayout extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <Header />
         {this.props.children}
       </div>

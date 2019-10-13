@@ -7,11 +7,19 @@ a.active {
     color: green;
 }
 
+nav {
+    padding-top: 25px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
 nav a {
     margin: 5px;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    float: right;
     letter-spacing: 10px;
+}
+
+nav a:hover {
+    text-decoration: none;
 }

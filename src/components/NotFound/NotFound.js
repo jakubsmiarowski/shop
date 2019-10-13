@@ -1,6 +1,6 @@
 import React from "react";
 
-export class NoMatch extends React.Component {
+export class NotFound extends React.Component {
     render() {
         return <div> Ups nie znaleziono strony </div>;
     }
