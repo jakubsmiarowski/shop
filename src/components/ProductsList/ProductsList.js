@@ -1,6 +1,7 @@
 import React from 'react';
 
-class SideBar extends React.Component {
+
+class ProductsList extends React.Component {
     render() {
         return (
             <div>
@@ -17,4 +18,4 @@ class SideBar extends React.Component {
     }
 }
 
-export default SideBar;
+export default ProductsList;
