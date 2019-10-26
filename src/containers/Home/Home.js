@@ -1,7 +1,12 @@
 import React from "react";
+import SideBar from '../../components/SideBar/SideBar'
 
 export class Home extends React.Component {
   render() {
-    return <div>Home</div>;
+    return (
+      <div className="home-container">
+        <SideBar />
+      </div>
+    )
   }
 }
