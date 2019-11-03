@@ -1,0 +1,50 @@
+.product-container {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.product {
+    width: 300px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 67px -25px #ccc;
+    border-radius: 25px;
+    background: #ecf0f1;
+    color: #009432;
+    text-align: center;
+}
+
+.product-title {
+    color: #000;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.product-price {}
+
+.product-img {
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    padding: 2px;
+    position: relative;
+}
+
+.cart {
+    background: #009432;
+    border-radius: 8px;
+    padding: 6px;
+    position: absolute;
+    border: none;
+    z-index: 3;
+    bottom: 7px;
+    right: 50%;
+    transform: translateX(50%);
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 
-export class Product extends React.Component {
+class Product extends React.Component {
     render() {
         return <div>Some Product</div>;
     }
 }
+
+export default Product;

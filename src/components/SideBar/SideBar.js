@@ -1,15 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './SideBar.css';
 
-export class SideBar extends React.Component {
+export default class SideBar extends React.Component {
   render() {
     return (
-        <ul>
-            <li>Mountain Bikes</li>
-            <li>Road Bikes</li>
-            <li>Triathlon Bikes</li>
-            <li>Track Bikes</li>
-            <li>Tandems</li>
-        </ul>
+        <div className="bikes-list">
+            <NavLink exact to="/" activeClassName="active" className="bike">Mountain Bikes</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike">Road Bikes</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike">Triathlon Bikes</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike">Track Bikes</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike">Tandems</NavLink>
+        </div>
     )
   }
 }
