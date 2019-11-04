@@ -10,6 +10,7 @@ export default class SideBar extends React.Component {
             <NavLink exact to="/" activeClassName="active" className="bike">Road Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Triathlon Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Track Bikes</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike">Electric Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Tandems</NavLink>
         </div>
     )
