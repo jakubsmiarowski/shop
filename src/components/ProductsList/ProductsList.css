@@ -11,8 +11,6 @@
 .product {
     width: 300px;
     margin-right: 20px;
-    box-shadow: 0px 0px 67px -25px #ccc;
-    border-radius: 25px;
     background: #ecf0f1;
     color: #009432;
     text-align: center;
@@ -29,8 +27,6 @@
 .product-img {
     height: 300px;
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
     background-size: cover;
     background-position: center;
     padding: 2px;
@@ -42,8 +38,8 @@
     border-radius: 8px;
     padding: 6px;
     position: absolute;
-    border: none;
     z-index: 3;
+    border: none;
     bottom: 7px;
     right: 50%;
     transform: translateX(50%);
