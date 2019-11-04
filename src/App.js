@@ -8,6 +8,7 @@ import { Cart } from "./components/Cart/Cart";
 import { Home } from "./containers/Home/Home";
 
 import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 
 
 class App extends React.Component {
