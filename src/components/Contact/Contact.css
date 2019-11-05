@@ -1,0 +1,65 @@
+.contact {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 100px;
+    min-height: 84vh
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.name,
+.email,
+.text {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid #009432;
+}
+
+.text {
+    padding-top: 10px;
+    height: 80%;
+}
+
+.button-contact {
+    border: 1px solid #009432;
+    background: #fff;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    color: #009432;
+    display: block;
+}
+
+.button-contact:hover {
+    background-color: #009432;
+    color: white;
+    font-weight: bold;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+}
+
+.choice h6 {
+    text-transform: uppercase;
+    font-size: 30px;
+}

@@ -2,15 +2,14 @@ import React from 'react'
 import NavBar from '../../components/NavBar/NavBar';
 import './Footer.css';
 
-export class Footer extends React.Component {
+class Footer extends React.Component {
     render() {
         return (
-            <div>
-                <p>&copy; Kuba</p>
-                <div>
-                    <NavBar />
-                </div>
+            <div className="footer container">
+                <p className="copyrights">&copy; Kuba 2019</p>
             </div>
         )
     }
 }
+
+export default Footer;
