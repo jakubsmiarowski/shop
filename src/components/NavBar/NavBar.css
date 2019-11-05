@@ -4,11 +4,13 @@ a:visited {
 }
 
 a.active {
-    color: #353b48;
+    color: #009432;
 }
 
 nav {
     font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin: 15px;
     padding-top: 25px;
     float: right;
     display: flex;
@@ -18,7 +20,7 @@ nav {
 nav a {
     margin: 5px;
     text-decoration: none;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
 }
 
 nav a:hover {
