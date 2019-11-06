@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsList from "../ProductsList/ProductsList";
+//import ProductsList from "../ProductsList/ProductsList";
 import "./Contact.css";
 
 export class Contact extends React.Component {
@@ -22,7 +22,6 @@ export class Contact extends React.Component {
           </div>
           <div className="choice">
             <h6>Customers Choice</h6>
-            <ProductsList />
           </div>
         </div>
       </div>

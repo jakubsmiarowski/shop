@@ -86,7 +86,7 @@ export const electricRemoved = () => {
 }
 export const filterByTandem = () => {
     return {
-        type: TANDEM_BY_TRIATHLON,
+        type: FILTER_BY_TANDEM,
     }
 }
 

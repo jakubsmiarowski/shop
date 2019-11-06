@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-//import { Provider } from 'react-redux';
-//import store from './store/store';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 import { MainLayout } from "./containers/MainLayout/MainLayout";
 import { NotFound } from "./components/NotFound/NotFound";
@@ -19,16 +19,18 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <MainLayout>
-          <Switch>
-            <Route exact path={"/"} component={Home} />
-            <Route exact path={"/contact"} component={Contact} />
-            <Route exact path={"/terms"} component={Terms} />
-            <Route exact path={"/cart"} component={Cart} />
-            <Route exact path={"/product"} component={Product} />
-            <Route component={NotFound} />
-          </Switch>
-        </MainLayout>
+        <Provider store={store}>
+          <MainLayout>
+            <Switch>
+              <Route exact path={"/"} component={Home} />
+              <Route exact path={"/contact"} component={Contact} />
+              <Route exact path={"/terms"} component={Terms} />
+              <Route exact path={"/cart"} component={Cart} />
+              <Route path={"/product"} component={Product} />
+              <Route component={NotFound} />
+            </Switch>
+          </MainLayout>
+        </Provider>
       </BrowserRouter>
     );
   }

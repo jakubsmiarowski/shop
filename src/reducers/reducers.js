@@ -16,62 +16,40 @@ import {
 } from '../actions/actions';
 import bikes from '../data/data.json';
 
-//Action Name Creator
-const createActionName = name => `app/${reducerName}/${name}`;
-
-//Actions
-export const ADD_TO_CART = createActionName('ADD_TO_CART');
-export const REMOVE_ITEM = createActionName('REMOVE_ITEM');
-export const FILTER_BY_MOUNTAIN = createActionName('FILTER_BY_MOUNTAIN');
-export const FILTER_BY_ROAD = createActionName('FILTER_BY_ROAD');
-export const FILTER_BY_TRIATHLON = createActionName('FILTER_BY_TRIATHLON');
-export const FILTER_BY_TRACK = createActionName('FILTER_BY_TRACK');
-export const FILTER_BY_ELECTRIC = createActionName('FILTER_BY_ELECTRIC');
-export const FILTER_BY_TANDEM = createActionName('FILTER_BY_TANDEM');
-export const MOUNTAIN_REMOVED = createActionName('MOUNTAIN_REMOVED');
-export const ROAD_REMOVED = createActionName('ROAD_REMOVED');
-export const TRIATHLON_REMOVED = createActionName('TRIATHLON_REMOVED');
-export const TRACK_REMOVED = createActionName('TRACK_REMOVED');
-export const ELECTRIC_REMOVED = createActionName('ELECTRIC_REMOVED');
-export const TANDEM_REMOVED = createActionName('TANDEM_REMOVED');
-
 //State
 const initialState = {
     items: bikes,
+    addedItems: [],
+    total: 0,
+    clickedProduct: []
 };
 
-//Reducer
-export default function reducer(statePart = initialState, action = {}) {
-    switch (action.type) {
-        case ADD_TO_CART:
-            return;
-        case REMOVE_ITEM:
-            return;
-        case FILTER_BY_MOUNTAIN:
-            return;
-        case FILTER_BY_ROAD:
-            return;
-        case FILTER_BY_TRIATHLON:
-            return;
-        case FILTER_BY_TRACK:
-            return;
-        case FILTER_BY_ELECTRIC:
-            return;
-        case FILTER_BY_TANDEM:
-            return;
-        case MOUNTAIN_REMOVED:
-            return;
-        case ROAD_REMOVED:
-            return;
-        case TRIATHLON_REMOVED:
-            return;
-        case TRACK_REMOVED:
-            return;
-        case ELECTRIC_REMOVED:
-            return;
-        case TANDEM_REMOVED:
-            return;
-        default:
-            return statePart;
+const reducer = (state = initialState, action) => {
+    if (action.type === ADD_TO_CART) {
+        let addedItem = state.items.find(item => item.id === action.id)
+            //check if the action id exists in the addedItems
+        let existed_item = state.addedItems.find(item => action.id === item.id)
+        if (existed_item) {
+            addedItem.quantity += 1
+            return {
+                ...state,
+                total: state.total + addedItem.price
+            }
+        } else {
+            addedItem.quantity = 1;
+            //calculating the total
+            let newTotal = state.total + addedItem.price
+
+            return {
+                ...state,
+                addedItems: [...state.addedItems, addedItem],
+                total: newTotal
+            }
+
+        }
+    } else {
+        return state
     }
 }
+
+export default reducer;

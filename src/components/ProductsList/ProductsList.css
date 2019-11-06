@@ -1,4 +1,4 @@
-.product-container {
+.products-container {
     font-family: 'Roboto Mono', monospace;
     display: flex;
     justify-content: flex-end;
@@ -8,7 +8,7 @@
     padding-top: 100px;
 }
 
-.product {
+.products {
     width: 300px;
     margin-right: 20px;
     background: #ecf0f1;
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.product-title {
+.products-title {
     color: #000;
     font-weight: 900;
     margin-top: 10px;
@@ -24,7 +24,7 @@
 
 .product-price {}
 
-.product-img {
+.products-img {
     height: 300px;
     width: 100%;
     background-size: cover;

@@ -1,0 +1,14 @@
+.product-component {
+    min-height: 90vh;
+}
+
+.product-image img {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    border-radius: 50px;
+}
+
+.product-image h5 {
+    color: #009432;
+}
