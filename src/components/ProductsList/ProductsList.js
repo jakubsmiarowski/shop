@@ -11,7 +11,7 @@ export default class ProductsList extends React.Component {
                     <p className="product-price">Price: </p>
                     <div className="product-img">
                         <button className="cart">Add to cart</button>
-                        <Link exact to="/"><img src="https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg" alt="#"/></Link>
+                        <Link exact to="/product"><img src="https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg" alt="#"/></Link>
                     </div>
                 </div>
             </div>

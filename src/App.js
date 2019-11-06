@@ -9,6 +9,7 @@ import { Contact } from './components/Contact/Contact'
 import { Cart } from "./components/Cart/Cart";
 import { Home } from "./containers/Home/Home";
 import Terms from "./components/Terms/Terms";
+import Product from "./components/Product/Product";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route exact path={"/contact"} component={Contact} />
             <Route exact path={"/terms"} component={Terms} />
             <Route exact path={"/cart"} component={Cart} />
+            <Route exact path={"/product"} component={Product} />
             <Route component={NotFound} />
           </Switch>
         </MainLayout>
