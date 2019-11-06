@@ -1,211 +1,211 @@
 [{
     "id": 1,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "mountain",
+    "title": "Vitus Nucleus 275 VR",
+    "desc": "The foundation of the Vitus range, the Nucleus is no ordinary entry-level mountain bike. Its solid spec list, increased standover clearance and aggressive geometry is designed to get you hooked.",
+    "price": 580,
+    "img": "https://media.chainreactioncycles.com/is/image/ChainReactionCycles/prod173149_Black%20-%20Blue_NE_01?wid=960&hei=498"
 }, {
     "id": 2,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "mountain",
+    "title": "Norco Fluid 3 2019",
+    "desc": "For the next-generation Norco Fluid Full Suspension mountain bike, we started with a clean slate and set out to design our new favourite, no-compromise full suspension trail bike. This full suspension mtb is ideal for hitting that perfect ribbon of singletrack, rolling that mossy slab, or popping that root to the next turn.",
+    "price": 1740,
+    "img": "https://static.evanscycles.com/production/bikes/mountain-bikes/product-image/484-319/norco-fluid-fs-3-2019-mountain-bike-black-EV337724-8500-1.jpg"
 }, {
     "id": 3,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "mountain",
+    "title": "Diamondback Overdrive 29",
+    "desc": "With a a lightweight alloy Strong box frame, front suspension fork and big 29 inch wheels, the Diamondback Overdrive is perfect for exploring your local trails.",
+    "price": 340,
+    "img": "https://www.bigw.com.au/medias/sys_master/images/images/h47/hd7/13702381994014.jpg"
 }, {
     "id": 4,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "mountain",
+    "title": "Pedal Thrasher",
+    "desc": "Pedal Thrasher is a hardtail mountain bike with 27.5 wheel size. A lightweight alloy frame and front suspension make it versatile and comfortable for recreational riding around parks and bike paths. ",
+    "price": 400,
+    "img": "https://www.99bikes.com.au/media/catalog/product/cache/image/700x560/e9c3970ab036de70892d86c6d221abfe/2/i/2i6a9926.jpg"
 }, {
     "id": 5,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "mountain",
+    "title": "Marin Mount Vision 8",
+    "desc": "The Marin Mount Vision 8 is the bike that transforms the whole of the mountain into your playground. Featuring 150mm of travel at the front and the back, with the back being guided by the award winning Nalid R3act 2 Play system, this 650b monster is ready to take on any trail.",
+    "price": 4300,
+    "img": "https://www.bicyclesonline.com.au/assets/full/4702646.jpg?1558923662"
 }, {
     "id": 6,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "road",
+    "title": "Specialized Allez E5",
+    "desc": "Roadies who want a pure tarmac machine designed for high speed on road over any distance. Race bikes are designed and built to be as light as possible, so expect light frames and overall bike weight to be impressively low.",
+    "price": 580,
+    "img": "https://static.evanscycles.com/production/bikes/road-bikes/product-image/484-319/specialized-allex-e5-2018-road-bike-red-black-EV306365-3085-10.jpg"
 }, {
     "id": 7,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "road",
+    "title": "Pinarello Dyodo E-Road",
+    "desc": "Pinarello Dyodo is a true road bike with a battery powered pedal assist motor in the rear wheel. Riding the Dyodo is like riding a top quality road bike but having the legs of a rider lining up to start the tour. ",
+    "price": 7200,
+    "img": "https://cdn11.bigcommerce.com/s-ox79uhj/images/stencil/1280x1280/products/40010/103486/pinarello_dyodo__84742.1540176845.jpg?c=2&imbypass=on"
 }, {
     "id": 8,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "road",
+    "title": "Gotti Road Bike",
+    "desc": "Brick Lane Bikes does not offer any warranty on vintage, used or second hand products.",
+    "price": 870,
+    "img": "https://www.bricklanebikes.co.uk/images/thumbs/0033036_gotti-road-bike-56cm_625.jpeg"
 }, {
     "id": 9,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "road",
+    "title": "Colnago A2R 105",
+    "desc": "The Colnago A2R features an advanced Alloy frame construction for greater strength, reduced weight and is fitted with superb components.",
+    "price": 1420,
+    "img": "https://www.wigglestatic.com/product-media/101849631/prod183830_Grey_NE_01.jpg?w=960&h=430&a=7"
 }, {
     "id": 10,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "road",
+    "title": "Bianchi Aria Ultegra",
+    "desc": "The Bianchi ARIA is a fast performance-oriented aero road bike. Built for lovers of speed, it is the perfect partner for your road challenges.",
+    "price": 3080,
+    "img": "https://cdn.shopify.com/s/files/1/1524/4896/products/Bianchi_Aria_Ultegra_8000_bike_2048x.jpeg?v=1523004927"
 }, {
     "id": 11,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "triathlon",
+    "title": "Vitus Auro CR Triathlon",
+    "desc": "The Auro CR is an ultra-efficient, UCI approved Triathlon and TT road bike. This bike features a re-engineered frameset construction to provide even more performance, adjustability and tyre clearance than its predecessor, the Crono.",
+    "price": 2325,
+    "img": "https://media.chainreactioncycles.com/is/image/ChainReactionCycles/prod173145_Black-Grey_NE_01?wid=960&hei=498"
 }, {
     "id": 12,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "triathlon",
+    "title": "Cervelo P5X Disc Ultegra Di2",
+    "desc": "You spend countless hours preparing, dedicating everything to your best performance. This bike will support you along the entire journey. For the P5X we put all preconceived ideas aside and started the R&D process with one goal: let the needs of the triathlete dictate.",
+    "price": 10830,
+    "img": "https://cdn11.bigcommerce.com/s-hx84l/images/stencil/1280x1280/products/1127/1673/httpcervelo.vwclients.netbikes0e0p5xdi1c__11715.1539718181.jpg?c=2&imbypass=on"
 }, {
     "id": 13,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "triathlon",
+    "title": "Ventum Z Mechanical",
+    "desc": "The Ventum Z is a triathlon bike based on Ventum’s non-traditional, Z-shaped frame.",
+    "price": 3160,
+    "img": "http://cdn.shopify.com/s/files/1/0916/8350/products/Ventum_Z_Mechanical_Vision_Black_30c80b19-fdf8-4e90-b397-c685e386c517_2048x2048.png?v=1520955773"
 }, {
     "id": 14,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "triathlon",
+    "title": "Cube Aerium c:68 SL Low",
+    "desc": "Developed in conjunction with the aerodynamics and Formula One specialists at Swiss Side, this no compromise speed machine leaves UCI regulations behind in the quest for ultimate performance.",
+    "price": 9800,
+    "img": "https://www.damianharriscycles.co.uk/_images/product-photos/cz/cube-aerium-c68-slt-low-2019-triathlon-bike-carbonred-a.jpg"
 }, {
     "id": 15,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
+    "tag": "triathlon",
+    "title": "Avow Advanced Pro 1",
+    "desc": "The specifications, colors, and availability of the products can be subjects to alter without prior notification. For availability and prices, please contact the retailers in your city / country.",
+    "price": 5000,
     "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
 }, {
     "id": 16,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "track",
+    "title": "Dolan DF4 Carbon",
+    "desc": "In and around track cycling you don’t have to look too hard to see that Dolan bikes are the mainstay of track riders and racers.",
+    "price": 1450,
+    "img": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/2/2017/03/Dolan-DF4-track-bike-01-e1502363575868.jpg"
 }, {
     "id": 17,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "track",
+    "title": "Cinelli Vigorelli Aluminium Pista",
+    "desc": "This new-and-improved additional to the popular Vigorelli line packs in a new lightweight, responsive frame for an even better performance on the track.",
+    "price": 1360,
+    "img": "https://www.wigglestatic.com/product-media/102005988/prod185470_White_NE_01.jpg?w=960&h=430&a=7"
 }, {
     "id": 18,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "track",
+    "title": "Felt TK1",
+    "desc": "The Tk1 is the ultimate track bike, and is ideal for endurance disciplines, sprints, and mass start competitions. Developed in conjunction with multi-time World Champion Sarah Hammer and other members of various Olympic teams.",
+    "price": 4500,
+    "img": "https://cdn.shopify.com/s/files/1/0021/5701/9254/products/BBHAA02_TK1-MATTE-CARBON-SHADOW-RED_2048x.jpg?v=1562784255"
 }, {
     "id": 19,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "track",
+    "title": "Fuji Norcom Straight 2.1",
+    "desc": "The Norcom Straight was developed in the wind tunnel to be one of the fastest bikes in the world.",
+    "price": 3000,
+    "img": "https://rower.com.pl/images/cache/0/fuji-norcom-straight-2-1-968874-1600x1066.jpg"
 }, {
     "id": 20,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "track",
+    "title": "Look AL 464",
+    "desc": "The AL 464 geometry benefits from all of our track savoir-faire and gets its design from the generations of successful frames that gave LOOK their name and reputation.",
+    "price": 1230,
+    "img": "https://ciclimattio.com/upload/foto/m/LOOK-AL-464-P-2019-nerogiallo_3213.jpg"
 }, {
     "id": 21,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "electric",
+    "title": "Emojo Lynx",
+    "desc": "The LYNX Fat tire Electric Bike by EMOJO is a very cool 20 inch FAT TIRE folding electric bicycle. ",
+    "price": 1200,
+    "img": "https://cdn.shopify.com/s/files/1/1282/8149/products/BLACK_LYNX_2048x2048.jpg?v=1496543925"
 }, {
     "id": 22,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "electric",
+    "title": "Giant Road-E Pro",
+    "desc": "With its purpose-built geometry, excellent weight distribution, and integrated power, Road-E+ keeps you going strong on busy commutes and other road adventures.",
+    "price": 3200,
+    "img": "https://images.giant-bicycles.com/b_white,c_pad,h_650,q_80/hrtcqx17tudynffnfdzc/MY19Road-E+1Pro_ColorA.jpg"
 }, {
     "id": 23,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "electric",
+    "title": "Magnum Metro",
+    "desc": "A beautifully designed, purpose built electric bike well suited to urban riding or commuting.",
+    "price": 2175,
+    "img": "https://www.magnumbikes.com/wp-content/uploads/2017/06/Magnum-Metro-Electric-Bike-1.jpg"
 }, {
     "id": 24,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "electric",
+    "title": "Priority Embark E-Bike",
+    "desc": "Designed from the ground up to go the distance, the Embark flattens hills and brings destinations closer.",
+    "price": 4000,
+    "img": "https://cdn.shopify.com/s/files/1/1245/1481/products/EMBARK_SQUARE.jpg?v=1567898057"
 }, {
     "id": 25,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "electric",
+    "title": "Moto Parilla Ultra Carbon E-Bike",
+    "desc": "The hand-built, fully customizable Ultra Carbon is a beefy e-bike that wants to handle it all. Designed specifically with its owner’s biometrics in mind, the pedal-assist bike can not only get riders around town, it can turn any peak, no matter how steep and winding, into something that can be conquered with ease.",
+    "price": 7200,
+    "img": "https://robbreportedit.files.wordpress.com/2019/09/ultracarbon01.jpg?w=1000"
 }, {
     "id": 26,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "tandem",
+    "title": "Dawes Galaxy Twins 2018",
+    "desc": "The Dawes Galaxy Twin Tandem Bike is a touring specific tandem. Based on the original Galaxy bicycle but with all the things you need for when two's company.",
+    "price": 2300,
+    "img": "https://static.evanscycles.com/production/bikes/tandems/product-image/484-319/dawes-galaxy-twin-2117-2015-tandem-bike-blue-EV238310-5000-1.jpg"
 }, {
     "id": 27,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "tandem",
+    "title": "Electra Tandem 7i",
+    "desc": "Forget heavy cruiser tandems. We made our own with lightweight aluminum frames and chromoly forks.",
+    "price": 1230,
+    "img": "https://www.sefiles.net/images/library/zoom/electra-tandem-7i-350459-1.jfif"
 }, {
     "id": 28,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "tandem",
+    "title": "KHS Tandemania Milano",
+    "desc": "The Tandemania Milano from KHS offers the best a road tandem can offer at the lowest price. ",
+    "price": 1800,
+    "img": "http://www.tandemcycleworks.com/wp-content/uploads/khs-milano.jpg"
 }, {
     "id": 29,
-    "tag": "test",
-    "title": "something",
-    "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "tag": "tandem",
+    "title": "Moustache Samedi 27 X2 EMTB",
+    "desc": "Wow, that’s not so stupid! It’s a great idea, to increase and combine effort, or when the two riders do not have the same level of fitness, with children, with a trailer, to go further.",
+    "price": 6700,
+    "img": "https://cdn3.volusion.com/kudtr.juwpv/v/vspfiles/photos/SAMEDi27x2-2.jpg?v-cache=1551544003"
 }, {
     "id": 30,
-    "tag": "test",
-    "title": "something",
+    "tag": "tandem",
+    "title": "Santana Tandem",
     "desc": "something more",
-    "price": 100,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "price": 1400,
+    "img": "https://www.sefiles.net/merchant/91/images/site/santana-tandem.jpg"
 }]
