@@ -22,6 +22,7 @@ export default class SideBar extends React.Component {
             <NavLink exact to="/" activeClassName="active" className="bike">Track Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Electric Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Tandems</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike reset">Reset Filters</NavLink>
         </div>
 
 
@@ -32,6 +33,7 @@ export default class SideBar extends React.Component {
                 id={item.id}
                 type="checkbox"
                 onChange={}
+                className="bike"
               />
               <label>{item.id}</label>
             </div>

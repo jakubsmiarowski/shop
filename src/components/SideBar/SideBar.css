@@ -13,6 +13,7 @@
     margin-top: 10px;
     width: 200px;
     color: #353b48;
+    transition: 0.2s ease;
 }
 
 .bike.active {
@@ -22,4 +23,9 @@
 .bike:hover {
     text-decoration: none;
     color: #009432;
+}
+
+.reset {
+    font-weight: 400;
+    color: #EA2027;
 }

@@ -21,6 +21,7 @@ nav a {
     margin: 5px;
     text-decoration: none;
     letter-spacing: 8px;
+    transition: 0.2s ease;
 }
 
 nav a:hover {
