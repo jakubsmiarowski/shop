@@ -27,5 +27,8 @@
 
 .reset {
     font-weight: 400;
+}
+
+.reset.active {
     color: #EA2027;
 }

@@ -6,10 +6,12 @@ import './Header.css';
 export const Header = props => {
   return (
     <div className="header">
-      <Link to="/">
-        <div className="logo"></div>
-      </Link>
-      <NavBar />
+      <div className="container">
+        <Link to="/">
+          <div className="logo"></div>
+        </Link>
+        <NavBar />
+      </div>
     </div>
   );
 };

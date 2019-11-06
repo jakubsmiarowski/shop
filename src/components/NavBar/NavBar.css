@@ -18,13 +18,20 @@ nav {
 }
 
 nav a {
+    color: black;
     margin: 5px;
     text-decoration: none;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     transition: 0.2s ease;
 }
 
 nav a:hover {
     text-decoration: none;
     color: #009432;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    float: right;
 }
