@@ -5,6 +5,10 @@ import './SideBar.css';
 export default class SideBar extends React.Component {
   render() {
 
+    /*handleReset = e => {
+      
+    }*/
+
     const bikes = [
       {id: "mountain"},
       {id: "road"},
@@ -29,7 +33,7 @@ export default class SideBar extends React.Component {
         /*<form className="bikes-list">
           {bikes.map(item => (
             <div className="input">
-              <input
+              <NavLink
                 id={item.id}
                 type="checkbox"
                 onChange={}
