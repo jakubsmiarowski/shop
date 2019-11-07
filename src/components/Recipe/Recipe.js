@@ -20,14 +20,14 @@ class Recipe extends React.Component {
 
     render() {
         return(
-            <div className="container">
+            <div className="recipe-container container">
                 <div className="collection">
                     <li className="collection-item">
                         <label>
                             <input type="checkbox" ref="shipping" onChange={this.handleChecked} />
                             <span>Shipping(+20€)</span>
                         </label>
-                        <li className="collection-item"><b>Total: {this.props.total} €</b></li>
+                        <li className="total"><b>Total: {this.props.total}€</b></li>
                     </li>
                     <div className="checkout">
                         <button className="button-cart">Checkout</button>

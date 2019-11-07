@@ -103,7 +103,7 @@ const reducer = (state = initialState, action) => {
             total: state.total + 20
         }
     }
-    if (action.type === 'SUB_SHIPPING') {
+    if (action.type === SUB_SHIPPING) {
         if (state.addedItems === []) {
             return {
                 ...state,

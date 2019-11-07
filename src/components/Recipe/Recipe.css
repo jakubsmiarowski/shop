@@ -1,5 +1,33 @@
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.collection-item {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-item input {
+    margin-right: 10px;
+}
+
+.collection-item label {
+    line-height: 22px;
+    font-size: 22px;
+    float: right;
+}
+
+.total {
+    font-weight: 900;
+}
+
 .button-cart {
     border: 1px solid #009432;
+    margin: 20px 0;
     background: #fff;
     height: 50px;
     width: 150px;
