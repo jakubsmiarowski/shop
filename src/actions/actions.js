@@ -1,5 +1,9 @@
 export const ADD_TO_CART = "ADD_TO_CART";
 export const REMOVE_ITEM = "REMOVE_ITEM";
+export const SUB_QUANTITY = 'SUB_QUANTITY';
+export const ADD_QUANTITY = 'ADD_QUANTITY';
+export const ADD_SHIPPING = 'ADD_SHIPPING';
+export const SUB_SHIPPING = 'SUB_SHIPPING';
 export const FILTER_BY_MOUNTAIN = 'FILTER_BY_MOUNTAIN';
 export const MOUNTAIN_REMOVED = 'RISERS_MOUNTAIN';
 export const FILTER_BY_ROAD = 'FILTER_BY_ROAD';
@@ -12,6 +16,7 @@ export const FILTER_BY_ELECTRIC = 'FILTER_BY_ELECTRIC';
 export const ELECTRIC_REMOVED = 'ELECTRIC_REMOVED';
 export const FILTER_BY_TANDEM = 'FILTER_BY_TANDEM';
 export const TANDEM_REMOVED = 'TANDEM_REMOVED';
+export const RESET_FILTERS = 'RESET_FILTERS';
 
 export const addToCart = id => {
     return {
@@ -23,6 +28,20 @@ export const addToCart = id => {
 export const removeItem = id => {
     return {
         type: REMOVE_ITEM,
+        id
+    }
+}
+
+export const addQuantity = (id) => {
+    return {
+        type: ADD_QUANTITY,
+        id
+    }
+}
+
+export const subtractQuantity = (id) => {
+    return {
+        type: SUB_QUANTITY,
         id
     }
 }
@@ -93,5 +112,11 @@ export const filterByTandem = () => {
 export const tandemRemoved = () => {
     return {
         type: TANDEM_REMOVED,
+    }
+}
+
+export const resetFilters = () => {
+    return {
+        type: RESET_FILTERS,
     }
 }

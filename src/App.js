@@ -6,7 +6,7 @@ import store from './store/store';
 import { MainLayout } from "./containers/MainLayout/MainLayout";
 import { NotFound } from "./components/NotFound/NotFound";
 import { Contact } from './components/Contact/Contact'
-import { Cart } from "./components/Cart/Cart";
+import Cart from "./components/Cart/Cart";
 import { Home } from "./containers/Home/Home";
 import Terms from "./components/Terms/Terms";
 import Product from "./components/Product/Product";
