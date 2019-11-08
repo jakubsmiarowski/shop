@@ -57,9 +57,7 @@ const reducer = (state = initialState, action) => {
         let itemToRemove = state.addedItems.find(item => action.id === item.id)
         let new_items = state.addedItems.filter(item => action.id !== item.id)
 
-        //calculating the total
         let newTotal = state.total - (itemToRemove.price * itemToRemove.quantity)
-        console.log(itemToRemove)
         return {
             ...state,
             addedItems: new_items,
