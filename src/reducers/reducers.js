@@ -119,6 +119,37 @@ const reducer = (state = initialState, action) => {
             total: state.total - 20
         }
     }
+    if (action.type === FILTER_BY_MOUNTAIN) {
+        let filteredMountains = initialState.items.filter(x => x.tag === 'mountain');
+        let notEmpty = state.items.length !== bikes.length
+        if (notEmpty) {
+            return {
+                ...state,
+                items: [...state.items, ...filteredMountains]
+            }
+        }
+        return {
+            ...state,
+            items: [...filteredMountains]
+        }
+    }
+
+    if (action.type === MOUNTAIN_REMOVED) {
+        let mountainRemoved = state.items.filter(x => x.tag !== 'mountain');
+        let Empty = state.items.length === state.items.filter(x => x.tag === 'mountain').length;
+        if (Empty) {
+            return {
+                ...state,
+                items: initialState.items
+            }
+        }
+        return {
+            ...state,
+            items: mountainRemoved
+        }
+    }
+
+
     if (action.type === RESET_FILTERS) {
         var sortedById = initialState.items.sort((a, b) => (a.id - b.id))
         return {

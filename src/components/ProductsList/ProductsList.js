@@ -2,8 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addToCart, passID }from '../../actions/actions';
 import { Link } from 'react-router-dom';
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './ProductsList.css';
 
 class ProductsList extends React.Component {
@@ -23,10 +21,8 @@ class ProductsList extends React.Component {
                     <h5 className="products-title">{item.title}</h5>
                     <p className="products-price">Price: {item.price} €</p>
                     <div className="products-img">
-                        <Link>
-                            <FontAwesomeIcon icon={faCartPlus} onClick={() => { this.handleClick(item.id) }}/>
-                        </Link>
                         <Link exact to="/product" onClick={() => { this.handleId(item.id) }}><img src={item.img} alt={item.title}/></Link>
+                        <button className="products-button"  onClick={() => { this.handleClick(item.id) }}>ADD TO CART</button>
                     </div>
                 </div>
             )

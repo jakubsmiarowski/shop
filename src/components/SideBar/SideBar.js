@@ -1,13 +1,26 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import * as actions from '../../actions/actions';
 import './SideBar.css';
 
-export default class SideBar extends React.Component {
-  render() {
+class SideBar extends React.Component {
 
+  
     /*handleReset = e => {
       
     }*/
+
+    
+    handleFilter = (e) => {
+      const id = e.target.id;
+      const clicked = e.target.clicked;
+
+      if(id==="mountain") { (clicked) ? this.props.filterByMountain() : this.props.mountainRemoved(); };
+    }
+
+
+  render() {
 
     const bikes = [
       {id: "mountain"},
@@ -18,9 +31,11 @@ export default class SideBar extends React.Component {
       {id: "tandem"}
     ]
 
+
     return (
+      
         <div className="bikes-list">
-            <NavLink exact to="/" activeClassName="active" className="bike">Mountain Bikes</NavLink>
+            <NavLink exact to="/" activeClassName="active" className="bike" onChange={this.handleFilter}>Mountain Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Road Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Triathlon Bikes</NavLink>
             <NavLink exact to="/" activeClassName="active" className="bike">Track Bikes</NavLink>
@@ -32,17 +47,26 @@ export default class SideBar extends React.Component {
 
         /*<form className="bikes-list">
           {bikes.map(item => (
-            <div className="input">
               <NavLink
                 id={item.id}
-                type="checkbox"
-                onChange={}
+                onClick={this.handleFilter}
                 className="bike"
-              />
-              <label>{item.id}</label>
-            </div>
+                <label>{item.id}</label>
+              </NavLink>
           ))}
         </form>*/
     )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    items: state.items
+  }
+}
+
+const mapDispatchToProps = {
+  ...actions
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideBar);
