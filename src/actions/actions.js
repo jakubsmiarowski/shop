@@ -1,4 +1,5 @@
 export const ADD_TO_CART = "ADD_TO_CART";
+export const PASS_ID = "PASS_ID";
 export const REMOVE_ITEM = "REMOVE_ITEM";
 export const SUB_QUANTITY = 'SUB_QUANTITY';
 export const ADD_QUANTITY = 'ADD_QUANTITY';
@@ -25,6 +26,13 @@ export const addToCart = id => {
     }
 }
 
+export const passID = id => {
+    return {
+        type: PASS_ID,
+        id
+    }
+}
+
 export const removeItem = id => {
     return {
         type: REMOVE_ITEM,
@@ -42,6 +50,20 @@ export const addQuantity = (id) => {
 export const subtractQuantity = (id) => {
     return {
         type: SUB_QUANTITY,
+        id
+    }
+}
+
+export const addShipping = id => {
+    return {
+        type: ADD_SHIPPING,
+        id
+    }
+}
+
+export const subtractShipping = id => {
+    return {
+        type: SUB_SHIPPING,
         id
     }
 }

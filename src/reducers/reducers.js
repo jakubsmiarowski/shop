@@ -1,5 +1,6 @@
 import {
     ADD_TO_CART,
+    PASS_ID,
     REMOVE_ITEM,
     ADD_QUANTITY,
     SUB_QUANTITY,
@@ -32,7 +33,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     if (action.type === ADD_TO_CART) {
         let addedItem = state.items.find(item => item.id === action.id)
-            //check if the action id exists in the addedItems
         let existed_item = state.addedItems.find(item => action.id === item.id)
         if (existed_item) {
             addedItem.quantity += 1
@@ -42,7 +42,6 @@ const reducer = (state = initialState, action) => {
             }
         } else {
             addedItem.quantity = 1;
-            //calculating the total
             let newTotal = state.total + addedItem.price
 
             return {
@@ -53,6 +52,15 @@ const reducer = (state = initialState, action) => {
 
         }
     }
+
+    if (action.type === PASS_ID) {
+        let clickedProduct = state.items.find(item => item.id === action.id)
+        return {
+            ...state,
+            clickedProduct: [clickedProduct]
+        }
+    }
+
     if (action.type === REMOVE_ITEM) {
         let itemToRemove = state.addedItems.find(item => action.id === item.id)
         let new_items = state.addedItems.filter(item => action.id !== item.id)
@@ -64,7 +72,6 @@ const reducer = (state = initialState, action) => {
             total: newTotal
         }
     }
-    //INSIDE CART COMPONENT
     if (action.type === ADD_QUANTITY) {
         let addedItem = state.items.find(item => item.id === action.id)
         addedItem.quantity += 1
@@ -76,7 +83,6 @@ const reducer = (state = initialState, action) => {
     }
     if (action.type === SUB_QUANTITY) {
         let addedItem = state.items.find(item => item.id === action.id)
-            //if the qt == 0 then it should be removed
         if (addedItem.quantity === 1) {
             let new_items = state.addedItems.filter(item => item.id !== action.id)
             let newTotal = state.total - addedItem.price

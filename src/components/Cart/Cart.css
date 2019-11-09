@@ -6,3 +6,36 @@
 .cart-container h5 {
     padding: 100px 0 0 40px;
 }
+
+.cart-item {
+    list-style-type: none;
+}
+
+.cart-img {
+    height: 500px;
+    width: 850px;
+    margin-top: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-desc {
+    padding: 40px 0;
+}
+
+.fa-plus {
+    color: #009432;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.fa-minus {
+    font-size: 30px;
+    color: #1B1464;
+    margin-right: 30px;
+}
+
+.fa-trash {
+    font-size: 30px;
+    color: #EA2027;
+}

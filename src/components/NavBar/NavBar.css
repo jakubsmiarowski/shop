@@ -36,7 +36,6 @@ nav a:hover {
     float: right;
 }
 
-.icon i {
-    width: 40px;
-    height: 40px;
+.fa-cart-arrow-down {
+    font-size: 20px;
 }

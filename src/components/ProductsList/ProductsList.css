@@ -10,7 +10,7 @@
 
 .products {
     width: 300px;
-    margin-right: 20px;
+    margin: 20px;
     background: #ecf0f1;
     color: #009432;
     text-align: center;
@@ -33,10 +33,17 @@
     position: relative;
 }
 
-.cart {
-    background: #009432;
-    border-radius: 8px;
-    padding: 6px;
+.products-img img {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fa-cart-plus {
+    font-size: 30px;
+    color: #009432;
     position: absolute;
     z-index: 3;
     border: none;

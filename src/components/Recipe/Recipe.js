@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { addShipping, subtractShipping } from "../../actions/actions";
 import './Recipe.css';
 
 class Recipe extends React.Component {
@@ -48,7 +49,7 @@ const mapStateToProps = (state)=>{
 const mapDispatchToProps = (dispatch)=>{
     return{
         addShipping: ()=>{dispatch({type: 'ADD_SHIPPING'})},
-        substractShipping: ()=>{dispatch({type: 'SUB_SHIPPING'})}
+        subtractShipping: ()=>{dispatch({type: 'SUB_SHIPPING'})}
     }
 }
 

@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
+import { faPlus, faMinus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { removeItem, addQuantity, subtractQuantity } from "../../actions/actions";
 import "./Cart.css";
 
@@ -22,25 +24,30 @@ class Cart extends React.Component {
   render() {
     let addedItems = this.props.items.length ? 
       (
-        this.props.item.map(item => {
+        this.props.items.map(item => {
           return (
             <li className="cart-item" key={item.id}>
               <div className="item-img">
-                <img src={item.img} alt={item.title} className=""/>
+                <img src={item.img} alt={item.title} className="cart-img"/>
               </div>
 
               <div className="item-desc">
                 <span className="title">{item.title}</span>
-                <p>{item.desc}</p>
                 <p><b>Price: {item.price}€</b></p>
                 <p>
                   <b>Quantity: {item.quantity}</b>
                 </p>
                 <div className="add-remove">
-                  <Link to="/cart"><i className="material-icons" onClick={() => {this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                  <Link to="/cart"><i className="material-icons" onClick={() => {this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                  <Link to="/cart" onClick={() => {this.handleAddQuantity(item.id)}}>
+                    <FontAwesomeIcon icon={faPlus} />
+                  </Link>
+                  <Link to="/cart" onClick={() => {this.handleSubtractQuantity(item.id)}}>
+                    <FontAwesomeIcon icon={faMinus} />
+                  </Link>
+                  <Link to="/cart" onClick={()=>{this.handleRemove(item.id)}}>
+                    <FontAwesomeIcon icon={faTrash} />
+                  </Link>
                 </div>
-                <button className="cart-button" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
               </div>
             </li>
           )
