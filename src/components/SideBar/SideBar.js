@@ -16,7 +16,11 @@ class SideBar extends React.Component {
       const id = e.target.id;
       const clicked = e.target.clicked;
 
-      if(id==="mountain") { (clicked) ? this.props.filterByMountain() : this.props.mountainRemoved(); };
+      if(id==="mountain") { 
+        if(clicked) {
+          return this.props.filterByMountain()
+        }
+        return this.props.mountainRemoved(); };
     }
 
 

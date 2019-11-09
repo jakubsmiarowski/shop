@@ -7,7 +7,7 @@ class Recipe extends React.Component {
 
     componentWillUnmount() {
         if(this.refs.shipping.checked)
-            this.props.substractShipping()
+            this.props.subtractShipping()
     }
 
     handleChecked = (e) => {
@@ -31,7 +31,7 @@ class Recipe extends React.Component {
                         <li className="total"><b>Total: {this.props.total}€</b></li>
                     </li>
                     <div className="checkout">
-                        <button className="button-cart">Checkout</button>
+                        <button className="button-cart" onClick={() => { alert('You just bought a killer bike!') }}>Checkout</button>
                     </div>
                 </div>
             </div>

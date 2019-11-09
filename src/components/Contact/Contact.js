@@ -21,7 +21,7 @@ export class Contact extends React.Component {
             <button className="button-contact">Send</button>
           </div>
           <div className="choice">
-            <h6>Customers Choice</h6>
+            <h6>Bike of the Day</h6>
           </div>
         </div>
       </div>
