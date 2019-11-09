@@ -15,19 +15,19 @@ class Product extends React.Component {
               <div className="product-image">
                 <img className="img-fluid" src={item.img} alt={item.title} />
                 <h5 className="product-title">{item.title}</h5>
-                <button to="/" className="cart" onClick={() => { this.handleClick(item.id) }}>Add to cart</button>
+                <p>{item.desc}</p>
               </div>
     
-              <div className="card-content">
-                <p>{item.desc}</p>
+              <div className="product-content">
                 <h3>Price: {item.price} £</h3>
+                <button to="/" className="product-button" onClick={() => { this.handleClick(item.id) }}>Add to cart</button>
               </div>
             </div>
           )
         })
     
         return (
-            <div className="product-container">
+            <div className="product-container container">
                 {itemList}
             </div>
         )
