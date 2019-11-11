@@ -24,6 +24,7 @@ class ProductsList extends React.Component {
                         <Link exact to="/product" onClick={() => { this.handleId(item.id) }}><img src={item.img} alt={item.title}/></Link>
                         <button className="products-button"  onClick={() => { this.handleClick(item.id) }}>ADD TO CART</button>
                     </div>
+                    
                 </div>
             )
         })

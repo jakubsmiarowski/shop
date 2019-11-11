@@ -16,6 +16,16 @@
     transition: 0.2s ease;
 }
 
+.line {
+    border-bottom: 1px solid #ccc;
+    transform: translateY(10px);
+    width: 150px;
+}
+
+label {
+    margin-left: 10px;
+}
+
 .bike.active {
     color: #353b48;
 }

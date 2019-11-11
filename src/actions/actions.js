@@ -5,6 +5,10 @@ export const SUB_QUANTITY = 'SUB_QUANTITY';
 export const ADD_QUANTITY = 'ADD_QUANTITY';
 export const ADD_SHIPPING = 'ADD_SHIPPING';
 export const SUB_SHIPPING = 'SUB_SHIPPING';
+export const SORT_PRICE_ASC = 'SORT_PRICE_ASC';
+export const SORT_PRICE_DESC = 'SORT_PRICE_DESC';
+export const SORT_NAME_ASC = 'SORT_NAME_ASC';
+export const SORT_NAME_DESC = 'SORT_NAME_DESC';
 export const FILTER_BY_MOUNTAIN = 'FILTER_BY_MOUNTAIN';
 export const MOUNTAIN_REMOVED = 'RISERS_MOUNTAIN';
 export const FILTER_BY_ROAD = 'FILTER_BY_ROAD';
@@ -65,6 +69,30 @@ export const subtractShipping = id => {
     return {
         type: SUB_SHIPPING,
         id
+    }
+}
+
+export const sortedByPriceAsc = () => {
+    return {
+        type: SORT_PRICE_ASC,
+    }
+}
+
+export const sortedByPriceDesc = () => {
+    return {
+        type: SORT_PRICE_DESC,
+    }
+}
+
+export const sortedByNameAsc = () => {
+    return {
+        type: SORT_NAME_ASC,
+    }
+}
+
+export const sortedByNameDesc = () => {
+    return {
+        type: SORT_NAME_DESC,
     }
 }
 

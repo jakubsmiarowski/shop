@@ -7,58 +7,115 @@ import './SideBar.css';
 class SideBar extends React.Component {
 
   
-    /*handleReset = e => {
-      
-    }*/
+  handleSort = e => {
+    const id = e.target.id;
+
+    switch (id) {
+      case "reset":
+        this.reset();
+        break;
+      default:
+        return false;
+    }
+  };
 
     
-    handleFilter = (e) => {
+    handleFilter = e => {
       const id = e.target.id;
-      const clicked = e.target.clicked;
-
-      if(id==="mountain") { 
-        if(clicked) {
-          return this.props.filterByMountain()
+      const checked = e.target.checked;
+  
+      if (id === "mountain") {
+        if (checked) {
+          return this.props.filterByMountain();
         }
-        return this.props.mountainRemoved(); };
-    }
+        return this.props.mountainRemoved();
+      }
+      if (id === "road") {
+        if (checked) {
+          return this.props.filterByRoad();
+        }
+        return this.props.roadRemoved();
+      }
+      if (id === "triathlon") {
+        if (checked) {
+          return this.props.filterByTriathlon();
+        }
+        return this.props.triathlonRemoved();
+      }
+      if (id === "track") {
+        if (checked) {
+          return this.props.filterByTrack();
+        }
+        return this.props.trackRemoved();
+      }
+      if (id === "electric") {
+        if (checked) {
+          return this.props.filterByElectric();
+        }
+        return this.props.electricRemoved();
+      }
+      if (id === "tandem") {
+        if (checked) {
+          return this.props.filterByTandem();
+        }
+        return this.props.tandemRemoved();
+      }
+  };
+
+    reset = () => {
+      const inputs = document.getElementsByTagName("input");
+      for (var input of inputs) {
+        input.checked = false;
+      }
+      this.props.resetFilters();
+    };
 
 
   render() {
 
+    const data = [
+      { id: "reset", name: "reset filters"}
+    ]
+
     const bikes = [
-      {id: "mountain"},
-      {id: "road"},
-      {id: "triathlon"},
-      {id: "track"},
-      {id: "electric"},
-      {id: "tandem"}
+      {id: "mountain", name: "mountain bikes"},
+      {id: "road", name: "road bikes"},
+      {id: "triathlon", name: "triathlon bikes"},
+      {id: "track", name: "track bikes"},
+      {id: "electric", name: "electric bikes"},
+      {id: "tandem", name: "tandems"},
     ]
 
 
     return (
-      
-        <div className="bikes-list">
-            <NavLink exact to="/" activeClassName="active" className="bike" onChange={this.handleFilter}>Mountain Bikes</NavLink>
-            <NavLink exact to="/" activeClassName="active" className="bike">Road Bikes</NavLink>
-            <NavLink exact to="/" activeClassName="active" className="bike">Triathlon Bikes</NavLink>
-            <NavLink exact to="/" activeClassName="active" className="bike">Track Bikes</NavLink>
-            <NavLink exact to="/" activeClassName="active" className="bike">Electric Bikes</NavLink>
-            <NavLink exact to="/" activeClassName="active" className="bike">Tandems</NavLink>
-            <NavLink exact to="/" activeClassName="active" className="bike reset">Reset Filters</NavLink>
-        </div>
 
+        <form className="bikes-list">
+          
 
-        /*<form className="bikes-list">
-          {bikes.map(item => (
-              <NavLink
-                id={item.id}
-                onClick={this.handleFilter}
-                className="bike"
-                <label>{item.id}</label>
-              </NavLink>
-          ))}
-        </form>*/
+        {bikes.map(item => (
+          <div key={item.id} className="bike">
+            <input
+              id={item.id}
+              type="checkbox"
+              onChange={this.handleFilter}
+            />
+            <label htmlFor={item.id}>{item.name}</label>
+          </div>
+        ))}
+        
+        <div className="line" />
+
+        {data.map(item => (
+          <NavLink 
+            id={item.id}
+            exact to="/" 
+            activeClassName="active" 
+            className="bike reset"
+            onClick={id => {this.handleSort(id)}}
+          >{item.name}
+          </NavLink>
+        ))}
+        </form>
     )
   }
 }
