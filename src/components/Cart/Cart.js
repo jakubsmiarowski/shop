@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from "react-reveal/Slide"
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
@@ -57,13 +58,15 @@ class Cart extends React.Component {
         <p>Nothing yet:) Get to it!</p>
       )
       return (
-        <div className="cart-container container">
-            <h5>You have ordered:</h5>
-            <ul className="collection">
-              {addedItems}
-            </ul>
-            <Recipe />
-        </div>
+        <Slide right>
+          <div className="cart-container container">
+              <h5>You have ordered:</h5>
+              <ul className="collection">
+                {addedItems}
+              </ul>
+              <Recipe />
+          </div>
+        </Slide>
       )
   }
 }

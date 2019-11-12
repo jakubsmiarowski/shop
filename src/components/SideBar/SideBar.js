@@ -6,19 +6,6 @@ import './SideBar.css';
 
 class SideBar extends React.Component {
 
-  
-  handleSort = e => {
-    const id = e.target.id;
-
-    switch (id) {
-      case "reset":
-        this.reset();
-        break;
-      default:
-        return false;
-    }
-  };
-
     
     handleFilter = e => {
       const id = e.target.id;
@@ -73,8 +60,8 @@ class SideBar extends React.Component {
 
   render() {
 
-    const data = [
-      { id: "reset", name: "reset filters"}
+    const resetData = [
+      { id: "reset", name: "x"}
     ]
 
     const bikes = [
@@ -105,13 +92,13 @@ class SideBar extends React.Component {
         
         <div className="line" />
 
-        {data.map(item => (
+        {resetData.map(item => (
           <NavLink 
             id={item.id}
             exact to="/" 
             activeClassName="active" 
             className="bike reset"
-            onClick={id => {this.handleSort(id)}}
+            onClick={id => {this.reset()}}
           >{item.name}
           </NavLink>
         ))}

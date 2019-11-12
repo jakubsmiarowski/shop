@@ -1,4 +1,5 @@
 import React from 'react';
+import Pulse from 'react-reveal/Pulse';
 import { connect } from 'react-redux';
 import { addToCart, passID }from '../../actions/actions';
 import { Link } from 'react-router-dom';
@@ -31,7 +32,9 @@ class ProductsList extends React.Component {
         
         return(
             <div className="products-container">
-                {itemList}
+                <Pulse>
+                    {itemList}
+                </Pulse>
             </div>
         )
     }
