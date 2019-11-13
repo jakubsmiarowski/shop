@@ -11,9 +11,17 @@ class RandomBike extends React.Component {
     }
 
     render() {
+        const state = {randomProduct: bikes[Math.floor(Math.random()*bikes.length)]};
+        const displayId = state.randomProduct.id;
+        const displayTitle = state.randomProduct.title;
+        const displayImg = state.randomProduct.img;
+        const displayPrice = state.randomProduct.price;
         return (
             <div className="random-bike">
-                <p>Random Bike</p>
+                <p>{displayTitle}</p>
+                <p>{displayId}</p>
+                <img src={displayImg} alt=""/>
+                <p>{displayPrice}</p>
             </div>
       )
     }
