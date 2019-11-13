@@ -12,7 +12,8 @@
 
 .product-image h5 {
     margin: 50px 0;
-    color: #009432;
+    color: #C94E50;
+    font-weight: 700;
 }
 
 .product-content {
@@ -28,14 +29,14 @@
 }
 
 .product-button {
-    border: 1px solid #009432;
+    border: 1px solid #C94E50;
     padding: 0 10px;
     margin: 20px 0;
-    background: #fff;
+    background: #C94E50;
     height: 40px;
     width: 140px;
     border-radius: 10px;
-    color: #009432;
+    color: black;
     display: block;
     position: absolute;
     bottom: -65px;
@@ -44,7 +45,5 @@
 }
 
 .product-button:hover {
-    background-color: #009432;
-    color: white;
-    font-weight: bold;
+    color: #FFFCE1;
 }

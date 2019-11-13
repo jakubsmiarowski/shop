@@ -31,7 +31,8 @@ const initialState = {
     items: bikes,
     addedItems: [],
     total: 0,
-    clickedProduct: []
+    clickedProduct: [],
+    randomProduct: bikes[Math.floor(Math.random() * bikes.length)]
 };
 
 const reducer = (state = initialState, action) => {

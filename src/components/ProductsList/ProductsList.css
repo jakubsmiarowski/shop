@@ -11,7 +11,7 @@
 .products {
     width: 300px;
     margin: 20px;
-    background: #FFFCE1;
+    background: #dfe6e9;
     color: #C94E50;
     text-align: center;
     position: relative;
@@ -54,7 +54,7 @@
 
 .products-button {
     background-color: #C94E50;
-    color: #ecf0f1;
+    color: black;
     font-weight: bold;
     border: none;
     font-size: 13px;
@@ -65,4 +65,9 @@
     bottom: 10px;
     right: 50%;
     transform: translateX(50%);
+    transition: 0.5s ease;
+}
+
+.products-button:hover {
+    color: #FFFCE1;
 }

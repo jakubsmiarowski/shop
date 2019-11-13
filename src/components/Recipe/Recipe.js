@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addShipping, subtractShipping } from "../../actions/actions";
 import './Recipe.css';
 
 class Recipe extends React.Component {
