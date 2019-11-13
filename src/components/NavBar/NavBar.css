@@ -4,11 +4,10 @@ a:visited {
 }
 
 a.active {
-    color: #009432;
+    color: #C94E50;
 }
 
-nav {
-    font-family: 'Roboto Mono', monospace;
+.nav-bar {
     font-weight: bold;
     margin: 15px;
     padding-top: 25px;
@@ -17,7 +16,7 @@ nav {
     flex-direction: row;
 }
 
-nav a {
+.nav-bar a {
     color: black;
     margin-right: 10px;
     text-decoration: none;
@@ -25,9 +24,9 @@ nav a {
     transition: 0.2s ease;
 }
 
-nav a:hover {
+.nav-bar a:hover {
     text-decoration: none;
-    color: #009432;
+    color: #C94E50;
 }
 
 .icon-container {
@@ -38,4 +37,10 @@ nav a:hover {
 
 .fa-shopping-cart {
     font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-bar {
+        display: none;
+    }
 }

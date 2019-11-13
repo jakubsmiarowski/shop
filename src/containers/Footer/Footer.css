@@ -1,6 +1,6 @@
 .footer {
-    font-family: 'Roboto Mono', monospace;
     display: flex;
-    color: #009432;
+    color: #C94E50;
+    font-weight: 700;
     margin-top: 100px;
 }

@@ -11,10 +11,17 @@
 .products {
     width: 300px;
     margin: 20px;
-    background: #ecf0f1;
-    color: #009432;
+    background: #FFFCE1;
+    color: #C94E50;
     text-align: center;
     position: relative;
+    border: 1px solid #B4BAD2;
+    border-radius: 20px;
+    box-shadow: 0 0 67px -25px #B4BAD2;
+}
+
+.products:hover {
+    border: 1px solid #C94E50;
 }
 
 .products-title {
@@ -33,6 +40,7 @@
     background-position: center;
     padding: 2px;
     position: relative;
+    border-radius: 20px;
 }
 
 .products-img img {
@@ -45,8 +53,7 @@
 }
 
 .products-button {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #009432;
+    background-color: #C94E50;
     color: #ecf0f1;
     font-weight: bold;
     border: none;

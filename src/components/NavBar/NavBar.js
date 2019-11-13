@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './NavBar.css';
 
 class NavBar extends Component {
+
     render() {
         return (
-            <nav>
+            <nav className="nav-bar">
                 <NavLink exact to="/" activeClassName="active">Home</NavLink>
                 <NavLink exact to="contact" activeClassName="active">Contact</NavLink>
                 <NavLink exact to="terms" activeClassName="active">Terms</NavLink>
