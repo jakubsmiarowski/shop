@@ -1,58 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { addToCart, passID }from '../../actions/actions';
+import { addToCart }from '../../actions/actions';
 
-function shuffleArray(array) {
-    let i = array.length - (array.length - 1);
-    for (; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      const temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
+class RandomBike extends React.Component {
+  
+    handleClick =(id) => {
+      this.props.addToCart(id);
     }
-    return array;
-  }
-  
-  class RandomBike extends React.Component {
-  
-      handleClick =(id) => {
-          this.props.addToCart(id);
-      }
-  
-      handleId = (id) => {
-          this.props.passID(id);
-      }
 
     render() {
-      const shuffledBikes = shuffleArray(this.props.items);
-      return (
-        <ul>
-          {shuffledBikes.map((item, idx) => {
+        let itemList = this.props.randomProduct.map(item => {
             return (
-              <li key={idx}>
-                <p>{item.title}</p>
-              </li>
-            );
-          })}
-        </ul>
-      );
+              <div className="product" key={item.id}>
+                  <h5 className="product-title">{item.title}</h5>
+              </div>
+            )
+          })
+      return (
+        <div className="random-bike">
+            {itemList}
+        </div>
+      )
     }
   }
-/*  RandomBike.propTypes = {
-    items: React.PropTypes.array,
-  };*/
 
 const mapStateToProps = (state)=>{
     return {
-      items: state.items
+        randomProduct: state.randomProduct
     }
 }
 
 const mapDispatchToProps= (dispatch)=>{  
     return{
-        addToCart: (id)=>{dispatch(addToCart(id))},
-        passID: (id) => {dispatch(passID(id))}
+        addToCart: (id)=>{dispatch(addToCart(id))}
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(RandomBike);

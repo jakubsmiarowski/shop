@@ -1,5 +1,6 @@
 export const ADD_TO_CART = "ADD_TO_CART";
 export const PASS_ID = "PASS_ID";
+export const RANDOM_BIKE = "RANDOM_BIKE";
 export const REMOVE_ITEM = "REMOVE_ITEM";
 export const SUB_QUANTITY = 'SUB_QUANTITY';
 export const ADD_QUANTITY = 'ADD_QUANTITY';

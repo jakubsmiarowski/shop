@@ -61,7 +61,7 @@ class SideBar extends React.Component {
   render() {
 
     const resetData = [
-      { id: "reset", name: "x"}
+      { id: "reset", name: "reset filters"}
     ]
 
     const bikes = [

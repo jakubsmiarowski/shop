@@ -36,9 +36,9 @@ label {
 }
 
 .reset {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .reset.active {
-    color: #EA2027;
+    color: #C94E50;
 }

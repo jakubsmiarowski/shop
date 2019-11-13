@@ -1,6 +1,7 @@
 import {
     ADD_TO_CART,
     PASS_ID,
+    RANDOM_BIKE,
     REMOVE_ITEM,
     ADD_QUANTITY,
     SUB_QUANTITY,
@@ -63,6 +64,14 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             clickedProduct: [clickedProduct]
+        }
+    }
+
+    if (action.type === RANDOM_BIKE) {
+        let randomProduct = state.items.find(item => item.id === action.id)
+        return {
+            ...state,
+            randomProduct: [randomProduct]
         }
     }
 
