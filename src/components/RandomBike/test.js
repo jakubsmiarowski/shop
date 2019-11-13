@@ -1,47 +1,53 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import bikes from '../../data/data.json';
 import { addToCart, passID }from '../../actions/actions';
-
-
-function shuffleArray(array) {
-  let i = array.length - 1;
-  for (; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-  return array;
-}
+import './RandomBike.css';
 
 class RandomBike extends React.Component {
-
+    
     handleClick =(id) => {
-        this.props.addToCart(id);
+      this.props.addToCart(id);
     }
 
     handleId = (id) => {
         this.props.passID(id);
     }
 
-  render() {
-    const shuffledBikes = shuffleArray(this.props.items);
-    return (
-      <ul>
-        {shuffledBikes.map((item, idx) => {
-          return (
-            <li key={idx}>
-              <p>{item.title}</p>
-              <p>{item.text}</p>
-              <p>{item.category}</p>
-            </li>
-          );
-        })}
-      </ul>
-    );
+    render() {
+        const state = {randomProduct: bikes[Math.floor(Math.random()*bikes.length)]};
+
+        const displayId = state.randomProduct.id;
+        const displayTitle = state.randomProduct.title;
+        const displayImg = state.randomProduct.img;
+        const displayPrice = state.randomProduct.price;
+        
+        return (
+          <div className="random-bike-container">
+            <div className="random-bike">
+                <h5 className="random-bike-title">{displayTitle}</h5>
+                <p className="random-bike-price">Price: {displayPrice} €</p>
+                <div className="random-bike-img">
+                  <Link exact to="/product" onClick={() => { this.handleId(displayId) }}><img src={displayImg} alt={displayTitle}/></Link>
+                  <button className="products-button"  onClick={() => { this.handleClick(displayId) }}>ADD TO CART</button>
+                </div>
+            </div>
+          </div>
+      )
+    }
   }
+
+const mapStateToProps = (state)=>{
+    return {
+        randomProduct: state.randomProduct
+    }
 }
-RandomBike.propTypes = {
-  posts: React.PropTypes.array,
-};
-export default RandomBike;
+
+const mapDispatchToProps= (dispatch)=>{  
+    return{
+        addToCart: (id)=>{dispatch(addToCart(id))},
+        passID: (id) => {dispatch(passID(id))}
+    }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(RandomBike);

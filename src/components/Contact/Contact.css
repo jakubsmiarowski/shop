@@ -1,4 +1,4 @@
-.contact {
+.contact-container {
     padding-top: 100px;
     min-height: 84vh;
     display: flex;
@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-.test {
+.contact {
     width: 100%;
 }
 
@@ -42,15 +42,6 @@
     color: black;
 }
 
-.name::placeholder,
-.email::placeholder,
-.text::placeholder,
-.name:-ms-input-placeholder,
-.email:-ms-input-placeholder,
-.text:-ms-input-placeholder {
-    color: #FFFCE1;
-}
-
 .text {
     padding-top: 10px;
     height: 80%;
@@ -73,7 +64,6 @@
 
 .choice {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     float: right;
     width: 100%;
@@ -83,6 +73,7 @@
 .choice h6 {
     text-transform: uppercase;
     font-size: 30px;
+    margin: 127px 20px 20px 0;
 }
 
 @media (max-width: 767px) {

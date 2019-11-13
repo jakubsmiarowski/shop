@@ -10,6 +10,7 @@
 
 .bike {
     text-transform: uppercase;
+    font-size: 20px;
     margin-top: 20px;
     width: 200px;
     color: #353b48;
@@ -41,4 +42,12 @@ label {
 
 .reset.active {
     color: #C94E50;
+}
+
+@media (max-width: 576px) {
+    .bikes-list {
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 20px;
+    }
 }

@@ -1,0 +1,46 @@
+.random-bike-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.random-bike {
+    width: 300px;
+    margin: 20px;
+    background: #dfe6e9;
+    color: #C94E50;
+    text-align: center;
+    position: relative;
+    border: 1px solid #B4BAD2;
+    border-radius: 20px;
+    box-shadow: 0 0 67px -25px #B4BAD2;
+}
+
+.random-bike:hover {
+    border: 1px solid #C94E50;
+}
+
+.random-bike-title {
+    font-size: 17px;
+    color: #000;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.random-bike-img {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 2px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.random-bike-img img {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 50px;
+}

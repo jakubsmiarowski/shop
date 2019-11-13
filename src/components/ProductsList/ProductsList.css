@@ -71,3 +71,10 @@
 .products-button:hover {
     color: #FFFCE1;
 }
+
+@media (max-width: 576px) {
+    .products-container {
+        justify-content: center;
+        padding-top: 50px;
+    }
+}

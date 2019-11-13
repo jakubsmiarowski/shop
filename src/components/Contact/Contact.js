@@ -1,14 +1,13 @@
 import React from "react";
-//import ProductsList from "../ProductsList/ProductsList";
 import Slide from "react-reveal/Slide";
-import RandomBike from "../RandomBike/RandomBike";
+import RandomBike from "../RandomBike/test";
 import "./Contact.css";
 
 export class Contact extends React.Component {
   render() {
     return (
-      <div className="contact container">
-        <div className="test">
+      <div className="contact-container container">
+        <div className="contact">
           <div className="address">
             <h6>Prosta 68</h6>
             <h6>Warsaw, Poland</h6>

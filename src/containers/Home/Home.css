@@ -5,8 +5,8 @@
     min-height: 84vh;
 }
 
-#page-wrap {
-    text-align: center;
-    /* Prevent sidebar from showing a scrollbar on page */
-    overflow: auto;
+@media(max-width: 576px) {
+    .home-container {
+        flex-direction: column;
+    }
 }
