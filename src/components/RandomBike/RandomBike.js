@@ -11,14 +11,9 @@ class RandomBike extends React.Component {
     }
 
     render() {
-        let itemList = this.props.randomProduct.map(item=> {
-            return(
-                <p>{item.title}</p>
-            )
-        })
         return (
             <div className="random-bike">
-                {itemList} 
+                <p>Random Bike</p>
             </div>
       )
     }
