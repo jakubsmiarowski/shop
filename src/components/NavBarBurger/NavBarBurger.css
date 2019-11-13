@@ -17,12 +17,6 @@
 
 .bm-burger-button {
     display: none;
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 140px;
-    top: 36px;
-    transition: 1s ease-out;
 }
 
 .bm-burger-bars {
@@ -75,7 +69,13 @@
 @media screen and (max-width: 767px) {
     .bm-burger-button {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        position: absolute;
+        width: 36px;
+        height: 30px;
+        right: 120px;
+        top: 36px;
+        transition: 1s ease-out;
     }
 }
 

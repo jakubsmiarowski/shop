@@ -42,3 +42,15 @@
 .button-cart:hover {
     color: #FFFCE1;
 }
+
+@media screen and (max-width: 767px) {
+    .recipe-container {
+        align-items: center;
+    }
+    .collection {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -3,4 +3,12 @@
     color: #C94E50;
     font-weight: 700;
     margin-top: 100px;
+    width: 100%;
+}
+
+@media(max-width:996px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
 }
