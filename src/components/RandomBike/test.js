@@ -22,7 +22,7 @@ class RandomBike extends React.Component {
         const displayTitle = state.randomProduct.title;
         const displayImg = state.randomProduct.img;
         const displayPrice = state.randomProduct.price;
-        
+
         return (
           <div className="random-bike-container">
             <div className="random-bike">
@@ -38,16 +38,10 @@ class RandomBike extends React.Component {
     }
   }
 
-const mapStateToProps = (state)=>{
-    return {
-        randomProduct: state.randomProduct
-    }
-}
-
 const mapDispatchToProps= (dispatch)=>{  
     return{
         addToCart: (id)=>{dispatch(addToCart(id))},
         passID: (id) => {dispatch(passID(id))}
     }
 }
-export default connect(mapStateToProps,mapDispatchToProps)(RandomBike);
+export default connect(mapDispatchToProps)(RandomBike);
