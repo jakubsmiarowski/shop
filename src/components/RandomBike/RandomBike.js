@@ -44,4 +44,4 @@ const mapDispatchToProps= (dispatch)=>{
         passID: (id) => {dispatch(passID(id))}
     }
 }
-export default connect(mapDispatchToProps)(RandomBike);
+export default connect(null,mapDispatchToProps)(RandomBike);

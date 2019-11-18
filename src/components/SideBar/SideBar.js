@@ -79,13 +79,12 @@ class SideBar extends React.Component {
 
         <form className="bikes-list">
           
-
         {bikes.map(item => (
           <div key={item.id} className="bike">
             <input
               id={item.id}
               type="checkbox"
-              onChange={this.handleFilter}
+              onClick={this.handleFilter}
             />
             <label htmlFor={item.id}>{item.name}</label>
           </div>
@@ -104,6 +103,7 @@ class SideBar extends React.Component {
           >{item.name}
           </NavLink>
         ))}
+        
         </form>
     )
   }
