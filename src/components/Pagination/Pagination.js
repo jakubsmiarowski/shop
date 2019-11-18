@@ -35,14 +35,14 @@ class Pagination extends React.Component {
       let controls = [];
       const pageCount = this.state.pageCount;
       for (let i = 1; i <= pageCount; i++) {
-        const baseClassName = 'paginator-button';
-        const activeClassName = i === this.state.currentPage ? `${baseClassName}--active` : '';
+        const baseClassName = 'paginator-buttons';
+        const activeClassName = i === this.state.currentPage ? `${baseClassName}-active` : '';
         controls.push(
           <div
             className={`${baseClassName} ${activeClassName}`}
             onClick={() => this.setCurrentPage(i)}
           >
-            {i}
+           <button id={i} className='paginator-button'>{i}</button>
           </div>
         );
       }
@@ -61,11 +61,9 @@ class Pagination extends React.Component {
     render() {
       return (
         <div className='products-container'>
+            {React.cloneElement(this.props.children, {data: this.createPaginatedData()})}
           <div className='paginator'>
             {this.createControls()}
-          </div>
-          <div className='pagination-results'>
-            {React.cloneElement(this.props.children, {data: this.createPaginatedData()})}
           </div>
         </div>
       );

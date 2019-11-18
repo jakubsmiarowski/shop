@@ -47,6 +47,7 @@ class SideBar extends React.Component {
         }
         return this.props.tandemRemoved();
       }
+
   };
 
     reset = () => {
@@ -94,11 +95,12 @@ class SideBar extends React.Component {
 
         {resetData.map(item => (
           <NavLink 
+            key={item.id}
             id={item.id}
             exact to="/" 
             activeClassName="active" 
             className="bike reset"
-            onClick={id => {this.reset()}}
+            onClick={id => {this.reset(id)}}
           >{item.name}
           </NavLink>
         ))}
