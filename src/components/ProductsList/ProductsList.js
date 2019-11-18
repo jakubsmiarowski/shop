@@ -5,6 +5,7 @@ import { addToCart, passID }from '../../actions/actions';
 import { Link } from 'react-router-dom';
 import './ProductsList.css';
 
+
 class ProductsList extends React.Component {
 
     handleClick =(id) => {
@@ -15,8 +16,10 @@ class ProductsList extends React.Component {
         this.props.passID(id);
     }
 
+
     render() {
-        let itemList = this.props.items.map(item=>{
+        const data = this.props.data;
+        let itemList = data.map(item=>{
             return(
                 <div className="products" key={item.id}>
                     <h5 className="products-title">{item.title}</h5>
@@ -31,7 +34,7 @@ class ProductsList extends React.Component {
         })
         
         return(
-            <div className="products-container">
+            <div className="products-container paginated-data">
                 <Pulse>
                     {itemList}
                 </Pulse>

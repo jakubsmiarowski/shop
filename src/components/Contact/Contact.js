@@ -1,6 +1,6 @@
 import React from "react";
 import Slide from "react-reveal/Slide";
-import RandomBike from "../RandomBike/test";
+import RandomBike from "../RandomBike/RandomBike";
 import "./Contact.css";
 
 export class Contact extends React.Component {

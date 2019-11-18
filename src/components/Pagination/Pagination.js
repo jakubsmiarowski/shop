@@ -1,77 +1,86 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './Pagination.css';
 
 class Pagination extends React.Component {
-
-    state = {
-        presentPage: this.props.initialPage || 1
+    constructor(props, context) {
+      super(props, context);
+      this.state = {
+        currentPage: null,
+        pageCount: null
+      }
     }
-
-    changePage = (newPage) => {
-        const { onPageChange, perPage } = this.props;
-        this.setState({ presentPage: newPage });
-        onPageChange(newPage, perPage);
+    
+    componentWillMount() {
+      const startingPage = this.props.startingPage
+        ? this.props.startingPage
+        : 1;
+      const data = this.props.data;
+      const pageSize = this.props.pageSize;
+      let pageCount = parseInt(data.length / pageSize);
+      if (data.length % pageSize > 0) {
+        pageCount++;
+      }
+      this.setState({
+        currentPage: startingPage,
+        pageCount: pageCount
+      });
     }
-
-    render() {
-
-        const { pages } = this.props;
-        const { presentPage } = this.state;
-        const { changePage } = this;
-
-        let prevLink = '';
-        if(presentPage > 1) {
-            prevLink = <li
-                key="0"
-                onClick={() => {changePage(presentPage-1) }}
-                className="pagination__list__item">
-                    <FontAwesomeIcon
-                    icon={faChevronLeft} />
-                </li>
-        }
-
-        let nextLink = '';
-        if(presentPage < pages) {
-            nextLink = <li
-                key={pages}
-                onClick={() => {changePage(presentPage+1) }}
-                className="pagination__lit__item">
-                    <FontAwesomeIcon
-                    icon={faChevronRight} />
-                </li>
-        }
-
-        return (
-            <div className="pagination">
-                <ul className="pagination__list">
-
-                    {prevLink}
-
-                    {[...Array(pages)].map((el, page) =>
-                    <li
-                    key={++page}
-                    onClick={() => { changePage(page) }}
-                    className={`pagination__list__item${((page) === presentPage) ? ' pagination__list__item--active' : ''}`}>
-                    {page}
-                    </li>
-                    )}
-
-                    {nextLink}
-
-                </ul>
-            </div>
+    
+    setCurrentPage(num) {
+      this.setState({currentPage: num});
+    }
+  
+    createControls() {
+      let controls = [];
+      const pageCount = this.state.pageCount;
+      for (let i = 1; i <= pageCount; i++) {
+        const baseClassName = 'paginator-button';
+        const activeClassName = i === this.state.currentPage ? `${baseClassName}--active` : '';
+        controls.push(
+          <div
+            className={`${baseClassName} ${activeClassName}`}
+            onClick={() => this.setCurrentPage(i)}
+          >
+            {i}
+          </div>
         );
+      }
+      return controls;
     }
-}
+  
+    createPaginatedData() {
+      const data = this.props.data;
+      const pageSize = this.props.pageSize;
+      const currentPage = this.state.currentPage;
+      const upperLimit = currentPage * pageSize;
+      const dataSlice = data.slice((upperLimit - pageSize), upperLimit);
+      return dataSlice;
+    }
+  
+    render() {
+      return (
+        <div className='products-container'>
+          <div className='paginator'>
+            {this.createControls()}
+          </div>
+          <div className='pagination-results'>
+            {React.cloneElement(this.props.children, {data: this.createPaginatedData()})}
+          </div>
+        </div>
+      );
+    }
+  }
+  
+  Pagination.propTypes = {
+    data: PropTypes.array.isRequired,
+    pageSize: PropTypes.number.isRequired,
+    startingPage: PropTypes.number.isRequired
+  };
+  
+  Pagination.defaultProps = {
+    pageSize: 6,
+    startingPage: 1
+  };
 
-Pagination.propTypes = {
-    pages: PropTypes.number.isRequired,
-    initialPage: PropTypes.number,
-    onPageChange: PropTypes.func.isRequired,
-    perPage: PropTypes.number
-};
-
-export default Pagination;
+  export default Pagination;
