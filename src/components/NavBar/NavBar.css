@@ -1,9 +1,8 @@
-a,
-a:visited {
+a {
     color: black;
 }
 
-a.active {
+.nav-bar a.active {
     color: #C94E50;
 }
 
@@ -20,7 +19,7 @@ a.active {
     color: black;
     margin-right: 10px;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     transition: 0.2s ease;
 }
 
@@ -30,13 +29,32 @@ a.active {
 }
 
 .icon-container {
-    display: flex;
-    flex-direction: row;
-    float: right;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
 }
 
 .fa-shopping-cart {
-    font-size: 22px;
+    font-size: 27px;
+}
+
+.fa-shopping-cart:hover {
+    color: black;
+}
+
+.cart-items {
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #C94E50;
+    border-radius: 50%;
+    line-height: 18px;
+    text-align: center;
+    transform: translate(20px, -18px);
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 767px) {

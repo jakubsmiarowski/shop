@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Pagination.css';
 
@@ -15,7 +16,8 @@ class Pagination extends React.Component {
       const startingPage = this.props.startingPage
         ? this.props.startingPage
         : 1;
-      const data = this.props.data;
+      const data = this.props.items;
+      console.log(data);
       const pageSize = this.props.pageSize;
       let pageCount = parseInt(data.length / pageSize);
       if (data.length % pageSize > 0) {
@@ -25,6 +27,25 @@ class Pagination extends React.Component {
         currentPage: startingPage,
         pageCount: pageCount
       });
+    }
+
+    componentDidUpdate(prevProps, prevState){
+      if(prevProps.items !== this.props.items){
+        const startingPage = this.props.startingPage
+        ? this.props.startingPage
+        : 1 ;
+        const data = this.props.items;
+        console.log(data);
+        const pageSize = this.props.pageSize;
+        let pageCount = parseInt(data.length / pageSize);
+        if(data.length % pageSize > 0) {
+          pageCount++
+        }
+        this.setState({
+          currentPage: startingPage,
+          pageCount: pageCount
+        })
+      }
     }
     
     setCurrentPage(num) {
@@ -50,7 +71,7 @@ class Pagination extends React.Component {
     }
   
     createPaginatedData() {
-      const data = this.props.data;
+      const data = this.props.items;
       const pageSize = this.props.pageSize;
       const currentPage = this.state.currentPage;
       const upperLimit = currentPage * pageSize;
@@ -81,4 +102,11 @@ class Pagination extends React.Component {
     startingPage: 1
   };
 
-  export default Pagination;
+  const mapStateToProps = state => {
+    console.log(state);
+    return{
+      items: state.items
+    }
+  }
+
+  export default connect(mapStateToProps)(Pagination);

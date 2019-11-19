@@ -1,9 +1,9 @@
 .cart-container {
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .cart-container h5 {
-    padding: 100px 0 0 40px;
+    padding: 50px 0 0 40px;
 }
 
 .cart-item {

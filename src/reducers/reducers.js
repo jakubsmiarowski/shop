@@ -7,10 +7,6 @@ import {
     SUB_QUANTITY,
     ADD_SHIPPING,
     SUB_SHIPPING,
-    SORT_PRICE_ASC,
-    SORT_PRICE_DESC,
-    SORT_NAME_ASC,
-    SORT_NAME_DESC,
     FILTER_BY_MOUNTAIN,
     FILTER_BY_ROAD,
     FILTER_BY_TRIATHLON,
@@ -33,6 +29,7 @@ const initialState = {
     addedItems: [],
     total: 0,
     clickedProduct: [],
+    cartItems: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -43,7 +40,8 @@ const reducer = (state = initialState, action) => {
             addedItem.quantity += 1
             return {
                 ...state,
-                total: state.total + addedItem.price
+                total: state.total + addedItem.price,
+                cartItems: state.cartItems + 1
             }
         } else {
             addedItem.quantity = 1;
@@ -52,7 +50,8 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 addedItems: [...state.addedItems, addedItem],
-                total: newTotal
+                total: newTotal,
+                cartItems: state.cartItems + 1
             }
 
         }
@@ -82,7 +81,8 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             addedItems: new_items,
-            total: newTotal
+            total: newTotal,
+            cartItems: state.cartItems - itemToRemove.quantity
         }
     }
     if (action.type === ADD_QUANTITY) {
@@ -91,7 +91,8 @@ const reducer = (state = initialState, action) => {
         let newTotal = state.total + addedItem.price
         return {
             ...state,
-            total: newTotal
+            total: newTotal,
+            cartItems: state.cartItems + 1
         }
     }
     if (action.type === SUB_QUANTITY) {
@@ -102,14 +103,16 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 addedItems: new_items,
-                total: newTotal
+                total: newTotal,
+                cartItems: state.cartItems - 1
             }
         } else {
             addedItem.quantity -= 1
             let newTotal = state.total - addedItem.price
             return {
                 ...state,
-                total: newTotal
+                total: newTotal,
+                cartItems: state.cartItems - 1
             }
         }
 
@@ -130,38 +133,6 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             total: state.total - 20
-        }
-    }
-
-    if (action.type === SORT_PRICE_ASC) {
-        var sortedByPriceAsc = state.items.sort((a, b) => (a.price - b.price))
-        return {
-            ...state,
-            items: [...sortedByPriceAsc]
-        }
-    }
-
-    if (action.type === SORT_PRICE_DESC) {
-        let sortedByPriceDesc = state.items.sort((a, b) => (b.price - a.price))
-        return {
-            ...state,
-            items: [...sortedByPriceDesc]
-        }
-    }
-
-    if (action.type === SORT_NAME_ASC) {
-        let sortedByNameAsc = state.items.sort((a, b) => a.title.localeCompare(b.title))
-        return {
-            ...state,
-            items: [...sortedByNameAsc]
-        }
-    }
-
-    if (action.type === SORT_NAME_DESC) {
-        let sortedByNameDesc = state.items.sort((a, b) => b.title.localeCompare(a.title))
-        return {
-            ...state,
-            items: [...sortedByNameDesc]
         }
     }
 

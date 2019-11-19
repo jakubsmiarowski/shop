@@ -11,10 +11,6 @@
     vertical-align: middle;
 }
 
-.paginator-buttons:active {
-    border: 3px solid #C94E50;
-}
-
 .paginator-button {
     margin: 10px;
     height: 30px;
@@ -28,8 +24,14 @@
     transition: 0.2s ease-out;
 }
 
+.paginator-button:active,
+.paginator-button:focus,
+.paginator-button:target,
+.paginator-button:active,
+.paginator-button:active:focus,
 .paginator-button:hover {
     border: 3px solid #C94E50;
+    outline: 0;
 }
 
 @media (max-width: 767px) {

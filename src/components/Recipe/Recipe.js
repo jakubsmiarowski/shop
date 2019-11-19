@@ -30,7 +30,7 @@ class Recipe extends React.Component {
                         <li className="total"><b>Total: {this.props.total}€</b></li>
                     </li>
                     <div className="checkout">
-                        <button className="button-cart" onClick={() => { alert('You just bought a killer bike!') }}>Checkout</button>
+                        <button className="button-cart" onClick={() => { window.location.href = 'https://www.payu.pl/' }}>Checkout</button>
                     </div>
                 </div>
             </div>
