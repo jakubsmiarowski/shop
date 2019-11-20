@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Provider } from 'react-redux';
-//import { LocalizeProvider } from 'react-localize-redux';
 import store from './store/store';
 
 import { MainLayout } from "./containers/MainLayout/MainLayout";

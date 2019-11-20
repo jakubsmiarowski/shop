@@ -34,27 +34,31 @@ a {
     vertical-align: middle;
 }
 
+.icon-container:hover {
+    color: #C94E50;
+}
+
 .fa-shopping-cart {
     font-size: 27px;
 }
 
-.fa-shopping-cart:hover {
-    color: black;
-}
-
 .cart-items {
-    padding-left: 5px;
+    padding-left: 4px;
     width: 20px;
     height: 20px;
     background: #C94E50;
     border-radius: 50%;
     line-height: 18px;
     text-align: center;
-    transform: translate(20px, -18px);
+    transform: translate(17px, -18px);
     text-decoration: none;
     font-size: 14px;
     color: #fff;
     font-weight: 800;
+}
+
+.cart-items:hover {
+    background-color: black;
 }
 
 @media screen and (max-width: 767px) {

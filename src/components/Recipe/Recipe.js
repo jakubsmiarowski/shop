@@ -17,21 +17,25 @@ class Recipe extends React.Component {
             this.props.subtractShipping();
         }
     }
+    handleBonus = () => {
+        alert('Bonus Code');
+    }
 
     render() {
         return(
             <div className="recipe-container container">
-                <div className="collection">
-                    <li className="collection-item">
-                        <label>
-                            <input type="checkbox" ref="shipping" onChange={this.handleChecked} />
-                            <span>Shipping(+20€)</span>
-                        </label>
-                        <li className="total"><b>Total: {this.props.total}€</b></li>
-                    </li>
-                    <div className="checkout">
-                        <button className="button-cart" onClick={() => { window.location.href = 'https://www.payu.pl/' }}>Checkout</button>
-                    </div>
+                <li className="collection-code">
+                    <input type="text" placeholder='Enter code' onClick={this.handleBonus} />
+                </li>
+                <li className="collection-item">
+                    <label>
+                        <input type="checkbox" ref="shipping" onChange={this.handleChecked} />
+                        <span>Shipping(+20€)</span>
+                    </label>
+                    <li className="total"><b>Total: {this.props.total}€</b></li>
+                </li>
+                <div className="checkout">
+                    <button className="button-cart" onClick={() => { window.location.href = 'https://www.payu.pl/' }}>Checkout</button>
                 </div>
             </div>
         )
