@@ -1,9 +1,10 @@
 a {
-    color: black;
+    color: #161617;
 }
 
 .nav-bar a.active {
     color: #C94E50;
+    font-weight: 900;
 }
 
 .nav-bar {
@@ -16,7 +17,7 @@ a {
 }
 
 .nav-bar a {
-    color: black;
+    color: #161617;
     margin-right: 10px;
     text-decoration: none;
     letter-spacing: 4px;
@@ -55,10 +56,6 @@ a {
     font-size: 14px;
     color: #fff;
     font-weight: 800;
-}
-
-.cart-items:hover {
-    background-color: black;
 }
 
 @media screen and (max-width: 767px) {
