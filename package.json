@@ -19,8 +19,7 @@
         "redux": "^4.0.4"
     },
     "scripts": {
-        "start": "npm-run-all -p -l",
-        "start:client": "react-scripts start",
+        "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
@@ -40,7 +39,5 @@
             "last 1 safari version"
         ]
     },
-    "devDependencies": {
-        "npm-run-all": "^4.1.5"
-    }
+    "devDependencies": {}
 }
