@@ -35,4 +35,7 @@
         .icon-container-mobile a {
             color: black;
         }
+        .icon-container-mobile a:hover {
+            text-decoration: none;
+        }
     }

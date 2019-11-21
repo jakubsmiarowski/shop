@@ -1,5 +1,5 @@
 ### React__Bike__Shop
-[SHOP - firebase deploy](https://bike-shop-a1744.firebaseapp.com/)
+[Deployed Shop - Firebase](https://bike-shop-95af0.firebaseapp.com/)
 
 
 
