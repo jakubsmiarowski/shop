@@ -8,21 +8,15 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.25",
         "@fortawesome/free-solid-svg-icons": "^5.11.2",
         "@fortawesome/react-fontawesome": "^0.1.7",
-        "autoprefixer": "^9.6.5",
         "bootstrap": "^4.3.1",
-        "classnames": "^2.2.6",
         "emotion-theming": "^10.0.19",
-        "eslint": "^6.5.1",
-        "file-loader": "^4.2.0",
         "react": "^16.10.2",
         "react-burger-menu": "^2.6.12",
         "react-dom": "^16.10.2",
-        "react-localize-redux": "^3.5.3",
         "react-redux": "^7.1.3",
         "react-reveal": "^1.2.2",
         "react-router-dom": "^5.1.2",
         "react-scripts": "^3.2.0",
-        "react-switch-lang": "^1.0.2",
         "redux": "^4.0.4"
     },
     "scripts": {
@@ -48,10 +42,6 @@
         ]
     },
     "devDependencies": {
-        "css-loader": "^3.2.0",
-        "node-sass": "^4.12.0",
-        "npm-run-all": "^4.1.5",
-        "sass-loader": "^8.0.0",
-        "style-loader": "^1.0.0"
+        "npm-run-all": "^4.1.5"
     }
 }
