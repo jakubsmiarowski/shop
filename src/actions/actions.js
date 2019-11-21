@@ -17,8 +17,8 @@ export const FILTER_BY_TRACK = 'FILTER_BY_TRACK';
 export const TRACK_REMOVED = 'TRACK_REMOVED';
 export const FILTER_BY_ELECTRIC = 'FILTER_BY_ELECTRIC';
 export const ELECTRIC_REMOVED = 'ELECTRIC_REMOVED';
-export const FILTER_BY_TANDEM = 'FILTER_BY_TANDEM';
-export const TANDEM_REMOVED = 'TANDEM_REMOVED';
+export const FILTER_BY_GRAVEL = 'FILTER_BY_GRAVEL';
+export const GRAVEL_REMOVED = 'GRAVEL_REMOVED';
 export const RESET_FILTERS = 'RESET_FILTERS';
 
 export const addToCart = id => {
@@ -128,15 +128,15 @@ export const electricRemoved = () => {
         type: ELECTRIC_REMOVED,
     }
 }
-export const filterByTandem = () => {
+export const filterByGravel = () => {
     return {
-        type: FILTER_BY_TANDEM,
+        type: FILTER_BY_GRAVEL,
     }
 }
 
-export const tandemRemoved = () => {
+export const gravelRemoved = () => {
     return {
-        type: TANDEM_REMOVED,
+        type: GRAVEL_REMOVED,
     }
 }
 

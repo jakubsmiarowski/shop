@@ -12,13 +12,13 @@ import {
     FILTER_BY_TRIATHLON,
     FILTER_BY_TRACK,
     FILTER_BY_ELECTRIC,
-    FILTER_BY_TANDEM,
+    FILTER_BY_GRAVEL,
     MOUNTAIN_REMOVED,
     ROAD_REMOVED,
     TRIATHLON_REMOVED,
     TRACK_REMOVED,
     ELECTRIC_REMOVED,
-    TANDEM_REMOVED,
+    GRAVEL_REMOVED,
     RESET_FILTERS
 } from '../actions/actions';
 import bikes from '../data/data.json';
@@ -285,24 +285,24 @@ const reducer = (state = initialState, action) => {
         }
     }
 
-    if (action.type === FILTER_BY_TANDEM) {
-        let filteredTandem = initialState.items.filter(x => x.tag === 'tandem');
+    if (action.type === FILTER_BY_GRAVEL) {
+        let filteredGravel = initialState.items.filter(x => x.tag === 'gravel');
         let notEmpty = state.items.length !== bikes.length
         if (notEmpty) {
             return {
                 ...state,
-                items: [...state.items, ...filteredTandem]
+                items: [...state.items, ...filteredGravel]
             }
         }
         return {
             ...state,
-            items: [...filteredTandem]
+            items: [...filteredGravel]
         }
     }
 
-    if (action.type === TANDEM_REMOVED) {
-        let tandemRemoved = state.items.filter(x => x.tag !== 'tandem');
-        let Empty = state.items.length === state.items.filter(x => x.tag === 'tandem').length;
+    if (action.type === GRAVEL_REMOVED) {
+        let gravelRemoved = state.items.filter(x => x.tag !== 'gravel');
+        let Empty = state.items.length === state.items.filter(x => x.tag === 'gravel').length;
         if (Empty) {
             return {
                 ...state,
@@ -311,7 +311,7 @@ const reducer = (state = initialState, action) => {
         }
         return {
             ...state,
-            items: tandemRemoved
+            items: gravelRemoved
         }
     }
 

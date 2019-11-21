@@ -41,11 +41,11 @@ class SideBar extends React.Component {
         }
         return this.props.electricRemoved();
       }
-      if (id === "tandem") {
+      if (id === "gravel") {
         if (checked) {
-          return this.props.filterByTandem();
+          return this.props.filterByGravel();
         }
-        return this.props.tandemRemoved();
+        return this.props.gravelRemoved();
       }
 
   };
@@ -71,7 +71,7 @@ class SideBar extends React.Component {
       {id: "triathlon", name: "triathlon bikes"},
       {id: "track", name: "track bikes"},
       {id: "electric", name: "electric bikes"},
-      {id: "tandem", name: "tandems"},
+      {id: "gravel", name: "gravel bikes"},
     ]
 
 

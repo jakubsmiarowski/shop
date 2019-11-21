@@ -1,31 +1,31 @@
 [{
     "id": 1,
     "tag": "mountain",
-    "title": "Vitus Nucleus 275 VR",
-    "desc": "The foundation of the Vitus range, the Nucleus is no ordinary entry-level mountain bike. Its solid spec list, increased standover clearance and aggressive geometry is designed to get you hooked.",
-    "price": 580,
-    "img": "https://media.chainreactioncycles.com/is/image/ChainReactionCycles/prod173149_Black%20-%20Blue_NE_01?wid=960&hei=498"
+    "title": "Radon Slide Trail 9.0",
+    "desc": "The brand new Shimano XT/SLX gear set with its 12-speed cassette and huge range transfers your energy to the light but stable DT Swiss M1700 wheels. The Maxxis Minion DHF/DHR tyre combination gives you ground stability and provides sufficient grip, on wet and dry surfaces alike. Stopping occurs with the solid Magura MT5 Discs: these measure 203 mm in front, and 180 mm at the rear.",
+    "price": 3099,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_R/orgid_33/thumbs/510104_4265680.jpg"
 }, {
     "id": 2,
     "tag": "mountain",
-    "title": "Norco Fluid 3 2019",
-    "desc": "For the next-generation Norco Fluid Full Suspension mountain bike, we started with a clean slate and set out to design our new favourite, no-compromise full suspension trail bike. This full suspension mtb is ideal for hitting that perfect ribbon of singletrack, rolling that mossy slab, or popping that root to the next turn.",
+    "title": "Focus MARES 9.7 LTD",
+    "desc": "The MARES 9.7 LTD from Focus with carbon frame is the perfect partner when it gets dirty. And it's so light that shouldering is no problem. With this rugged bike you're just as well equipped for mud, rain and snow as you are for trips on forest paths and road.",
     "price": 1740,
-    "img": "https://static.evanscycles.com/production/bikes/mountain-bikes/product-image/484-319/norco-fluid-fs-3-2019-mountain-bike-black-EV337724-8500-1.jpg"
+    "img": "https://cdn.bike-discount.de/media/org/orgb_F/orgid_25/thumbs/511918_4280650.jpg"
 }, {
     "id": 3,
     "tag": "mountain",
-    "title": "Diamondback Overdrive 29",
-    "desc": "With a a lightweight alloy Strong box frame, front suspension fork and big 29 inch wheels, the Diamondback Overdrive is perfect for exploring your local trails.",
-    "price": 340,
-    "img": "https://www.bigw.com.au/medias/sys_master/images/images/h47/hd7/13702381994014.jpg"
+    "title": "Radon Jealous AL 9.0 2x11",
+    "desc": "If you tumble down the trail, the Shimano XT brake unit allows ideal, low weight deceleration. The Fox 32 Rhythm suspension fork takes on shocks with two different damper modes: Firm for ascents and minimum for travel, and Open for easy absorption of shocks on the descent. SizeSplit lets you choose between 27.5-inch wheels for extra manoeuvrability, and 29-inch wheels for a smoother ride.",
+    "price": 1321,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_R/orgid_33/thumbs/440230_3787185.jpg"
 }, {
     "id": 4,
     "tag": "mountain",
-    "title": "Pedal Thrasher",
-    "desc": "Pedal Thrasher is a hardtail mountain bike with 27.5 wheel size. A lightweight alloy frame and front suspension make it versatile and comfortable for recreational riding around parks and bike paths. ",
-    "price": 400,
-    "img": "https://www.99bikes.com.au/media/catalog/product/cache/image/700x560/e9c3970ab036de70892d86c6d221abfe/2/i/2i6a9926.jpg"
+    "title": "Cube Reaction Hybrid Pro 500",
+    "desc": "We designed the Reaction Hybrid Pro so that you could get more out of the trails that you ride. More miles, more time, more fun: exactly what you'd expect from a Bosch CX e-bike built by CUBE. With its plush, accurate-steering Suntour suspension fork and light, grippy and comfortable Schwalbe 2.6 inch tyres to keep you on track, this is a bike that will help you tame any trail",
+    "price": 1860,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/421837_3643285.jpg"
 }, {
     "id": 5,
     "tag": "mountain",
@@ -36,10 +36,10 @@
 }, {
     "id": 6,
     "tag": "road",
-    "title": "Specialized Allez E5",
-    "desc": "Roadies who want a pure tarmac machine designed for high speed on road over any distance. Race bikes are designed and built to be as light as possible, so expect light frames and overall bike weight to be impressively low.",
-    "price": 580,
-    "img": "https://static.evanscycles.com/production/bikes/road-bikes/product-image/484-319/specialized-allex-e5-2018-road-bike-red-black-EV306365-3085-10.jpg"
+    "title": "Cube Litening C:68X SL",
+    "desc": "A bike so fast it'll make your eyes water sounds like an impossible dream, but that's what we set out to build with the brand-new Litening C:68X SL. You've probably already spotted the Shimano DuraAce Di2 disc groupset and the DT Swiss ARC 1400 DICUT 62 carbon wheelset. They're specially chosen to help you achieve new personal bests, give the competition a hard time and generally raise your game a notch or two. But the secret to the Litening C:68X SL's success is its brand-new aero frame. A full 30% more aerodynamically efficient than before, it makes full use of the all the experience we gained building our record-breaking Aerium bikes",
+    "price": 6717,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/495705_4167586.jpg"
 }, {
     "id": 7,
     "tag": "road",
@@ -50,17 +50,17 @@
 }, {
     "id": 8,
     "tag": "road",
-    "title": "Gotti Road Bike",
-    "desc": "Brick Lane Bikes does not offer any warranty on vintage, used or second hand products.",
-    "price": 870,
-    "img": "https://www.bricklanebikes.co.uk/images/thumbs/0033036_gotti-road-bike-56cm_625.jpeg"
+    "title": "Radon Vaillant Disc 9.0",
+    "desc": "Shimano’s complete Ultegra group gives you consistent traction with every move of the pedal. Upon its return, VAILLANT DISC will be accompanied by Shimano’s Ultegra disk brakes with their large 160mm disks, which can stop your traction in every situation.",
+    "price": 2169,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_R/orgid_33/thumbs/441132_3788470.jpg"
 }, {
     "id": 9,
     "tag": "road",
-    "title": "Colnago A2R 105",
-    "desc": "The Colnago A2R features an advanced Alloy frame construction for greater strength, reduced weight and is fitted with superb components.",
-    "price": 1420,
-    "img": "https://www.wigglestatic.com/product-media/101849631/prod183830_Grey_NE_01.jpg?w=960&h=430&a=7"
+    "title": "Focus IZALCO MAX DISC 8.8",
+    "desc": "The Focus Izalco Max Disc 8.8 with Ultegra drivetrain has an aerodynamically shaped and lightweight carbon frame with carbon stem. The cable routing is integrated for a clean look and good aerodynamics. Shimano's disc brakes provide excellent deceleration that can be easily controlled.",
+    "price": 3823,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_F/orgid_25/thumbs/497726_4196438.jpg"
 }, {
     "id": 10,
     "tag": "road",
@@ -71,10 +71,10 @@
 }, {
     "id": 11,
     "tag": "triathlon",
-    "title": "Vitus Auro CR Triathlon",
-    "desc": "The Auro CR is an ultra-efficient, UCI approved Triathlon and TT road bike. This bike features a re-engineered frameset construction to provide even more performance, adjustability and tyre clearance than its predecessor, the Crono.",
-    "price": 2325,
-    "img": "https://media.chainreactioncycles.com/is/image/ChainReactionCycles/prod173145_Black-Grey_NE_01?wid=960&hei=498"
+    "title": "Cube Aerium C:68 SLT 1X12 HIGH",
+    "desc": "When you've put in the hours on your training, you'll want a bike that's capable of making the best of your efforts. The Cube Aerium C:68 SLT is that bike - utterly uncompromising in both design and execution to match your uncompromising approach to racing. Developed in conjunction with the ærodynamics and Formula One specialists at SwissSide, this no-holds-barred speed machine leaves UCI regulations behind in the quest for ultimate performance",
+    "price": 8787,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/501380_4211264.png"
 }, {
     "id": 12,
     "tag": "triathlon",
@@ -99,10 +99,10 @@
 }, {
     "id": 15,
     "tag": "triathlon",
-    "title": "Avow Advanced Pro 1",
-    "desc": "The specifications, colors, and availability of the products can be subjects to alter without prior notification. For availability and prices, please contact the retailers in your city / country.",
-    "price": 5000,
-    "img": "https://www.decathlon.co.uk/media/840/8405298/classic_1278143.jpg"
+    "title": "Cube Aerium Race carbon",
+    "desc": "Developed to help dedicated athletes pare their times down to the bone, the Aerium Race is a high-performance machine for podium-chasing triathletes and time triallists. One glance will tell you that this is no ordinary bike - we sweated every detail on the frame and components to maximise performance, so you can push yourself harder.",
+    "price": 3099,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/501379_4211101.jpg"
 }, {
     "id": 16,
     "tag": "track",
@@ -113,16 +113,16 @@
 }, {
     "id": 17,
     "tag": "track",
-    "title": "Cinelli Vigorelli Aluminium Pista",
+    "title": "Merida Speeder 100",
     "desc": "This new-and-improved additional to the popular Vigorelli line packs in a new lightweight, responsive frame for an even better performance on the track.",
     "price": 1360,
-    "img": "https://www.wigglestatic.com/product-media/102005988/prod185470_White_NE_01.jpg?w=960&h=430&a=7"
+    "img": "https://cdn.bike-discount.de/media/org/orgb_M/orgid_275/thumbs/512207_4300846.jpg"
 }, {
     "id": 18,
     "tag": "track",
     "title": "Felt TK1",
-    "desc": "The Tk1 is the ultimate track bike, and is ideal for endurance disciplines, sprints, and mass start competitions. Developed in conjunction with multi-time World Champion Sarah Hammer and other members of various Olympic teams.",
-    "price": 4500,
+    "desc": "The lightweight and versatile SPEEDER fitness bike is a close relative of Merida's road bikes and is redesigned in 2020. The new, more sporty geometry has been given more reach to improve stability while maintaining a more upright, comfortable riding position.",
+    "price": 722,
     "img": "https://cdn.shopify.com/s/files/1/0021/5701/9254/products/BBHAA02_TK1-MATTE-CARBON-SHADOW-RED_2048x.jpg?v=1562784255"
 }, {
     "id": 19,
@@ -134,10 +134,10 @@
 }, {
     "id": 20,
     "tag": "track",
-    "title": "Look AL 464",
-    "desc": "The AL 464 geometry benefits from all of our track savoir-faire and gets its design from the generations of successful frames that gave LOOK their name and reputation.",
-    "price": 1230,
-    "img": "https://ciclimattio.com/upload/foto/m/LOOK-AL-464-P-2019-nerogiallo_3213.jpg"
+    "title": "Cube Hyde Race",
+    "desc": "Need to get from A to B across town as fast as possible? The Cube Hyde Race is the right tool for the job. Light, quick and comfortable, it's the city bike of choice for discerning riders looking for an efficient, environmentally-friendly means of transport. It is, in many ways, a masterpiece of understatement.",
+    "price": 1320,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/503836_4214582.jpg"
 }, {
     "id": 21,
     "tag": "electric",
@@ -155,57 +155,57 @@
 }, {
     "id": 23,
     "tag": "electric",
-    "title": "Magnum Metro",
-    "desc": "A beautifully designed, purpose built electric bike well suited to urban riding or commuting.",
-    "price": 2175,
-    "img": "https://www.magnumbikes.com/wp-content/uploads/2017/06/Magnum-Metro-Electric-Bike-1.jpg"
+    "title": "Cube Stereo Hybrid 140 HPC TM 625",
+    "desc": "How do you build a better mountain-taming e-MTB? Simple. Give the CUBE design team a blank sheet of paper and tell them not to compromise. And here's the result: the brand-new Stereo Hybrid 140 HPC TM. Completely redesigned from head tube to Boost 148 rear axle, it's the culmination of years of suspension, carbon and Bosch e-bike design experience.",
+    "price": 5167,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/501890_4204084.jpg"
 }, {
     "id": 24,
     "tag": "electric",
-    "title": "Priority Embark E-Bike",
-    "desc": "Designed from the ground up to go the distance, the Embark flattens hills and brings destinations closer.",
-    "price": 4000,
-    "img": "https://cdn.shopify.com/s/files/1/1245/1481/products/EMBARK_SQUARE.jpg?v=1567898057"
+    "title": "Focus AVENTURA² 6.8",
+    "desc": "The Focus AVENTURA² 6.8 trekking e-bike with the new Bosch Performance CX drive is powerful and agile. The removable 625 Wh battery is beautifully integrated in the down tube. With an additional battery, the total capacity can be increased up to 1125 Wh. The eBike has robust metal mudguards, a stable pannier rack and a powerful light. The high-quality Shimano MT500 wheels ensure smooth running, while Ergon saddles and grips offer plenty of comfort.",
+    "price": 3823,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_F/orgid_25/thumbs/492289_4150899.jpg"
 }, {
     "id": 25,
     "tag": "electric",
-    "title": "Moto Parilla Ultra Carbon E-Bike",
-    "desc": "The hand-built, fully customizable Ultra Carbon is a beefy e-bike that wants to handle it all. Designed specifically with its owner’s biometrics in mind, the pedal-assist bike can not only get riders around town, it can turn any peak, no matter how steep and winding, into something that can be conquered with ease.",
-    "price": 7200,
-    "img": "https://robbreportedit.files.wordpress.com/2019/09/ultracarbon01.jpg?w=1000"
+    "title": "Mondraker CRAFTY RR 29",
+    "desc": "The CRAFTY RR of the Spanish noble brand Mondraker convinces with the latest generation of the Bosch Performance Line CX drive system. The E-MTB for all-mountain use offers outstanding riding comfort and excellent responsiveness thanks to the Fox suspension with Kashima-coated fork.",
+    "price": 6717,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_M/orgid_93463/thumbs/499406_4190961.jpg"
 }, {
     "id": 26,
-    "tag": "tandem",
-    "title": "Dawes Galaxy Twins 2018",
-    "desc": "The Dawes Galaxy Twin Tandem Bike is a touring specific tandem. Based on the original Galaxy bicycle but with all the things you need for when two's company.",
-    "price": 2300,
-    "img": "https://static.evanscycles.com/production/bikes/tandems/product-image/484-319/dawes-galaxy-twin-2117-2015-tandem-bike-blue-EV238310-5000-1.jpg"
+    "tag": "gravel",
+    "title": "Cube Nuroad Race FE",
+    "desc": "Fast, fun, versatile: an impossible combination? Not with the Cube Nuroad Race FE. Featuring Shimano's new gravel-friendly GRX 2x11 transmission and hydraulic disc brakes, we combined all the best qualities of our Attain and Cross Race series, then threw in a dynamo-powered Supernova E3 lighting system and an Acid SL luggage carrier, too.",
+    "price": 1652,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/501356_4208072.jpg"
 }, {
     "id": 27,
-    "tag": "tandem",
-    "title": "Electra Tandem 7i",
-    "desc": "Forget heavy cruiser tandems. We made our own with lightweight aluminum frames and chromoly forks.",
-    "price": 1230,
-    "img": "https://www.sefiles.net/images/library/zoom/electra-tandem-7i-350459-1.jfif"
+    "tag": "gravel",
+    "title": "Fuji Jari Carbon 1.1",
+    "desc": "Fuji combined their go-anywhere Jari with their lightest, race-quality carbon fiber to make the standard-bearer for the gravel/adventure class. The sub-1,000-gram C15 frame is the first in its class made of monocoque/one-piece carbon",
+    "price": 3099,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_F/orgid_387/thumbs/510463_4272498.jpg"
 }, {
     "id": 28,
-    "tag": "tandem",
-    "title": "KHS Tandemania Milano",
-    "desc": "The Tandemania Milano from KHS offers the best a road tandem can offer at the lowest price. ",
-    "price": 1800,
-    "img": "http://www.tandemcycleworks.com/wp-content/uploads/khs-milano.jpg"
+    "tag": "gravel",
+    "title": "Centurion Crossfire Gravel 2000",
+    "desc": "With the Centurion Crossfire Gravel you are prepared for everything - whether off-road, for winter training through mud and snow, for sporty commuting to work or for bikepacking adventures, the Gravel bike is the ideal companion.",
+    "price": 1549,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_234/thumbs/431553_3749175.jpg"
 }, {
     "id": 29,
-    "tag": "tandem",
-    "title": "Moustache Samedi 27 X2 EMTB",
-    "desc": "Wow, that’s not so stupid! It’s a great idea, to increase and combine effort, or when the two riders do not have the same level of fitness, with children, with a trailer, to go further.",
-    "price": 6700,
-    "img": "https://cdn3.volusion.com/kudtr.juwpv/v/vspfiles/photos/SAMEDi27x2-2.jpg?v-cache=1551544003"
+    "tag": "gravel",
+    "title": "Breezer Inversion Pro",
+    "desc": "For some riders the best part of the ride starts at the end of the pavement. The Inversion is designed to get you there fast while offering the stability and tire clearance to handle gravel or bad roads with ease.",
+    "price": 2169,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_B/orgid_407/thumbs/511271_4275231.jpg"
 }, {
     "id": 30,
-    "tag": "tandem",
-    "title": "Santana Tandem",
-    "desc": "something more",
-    "price": 1400,
-    "img": "https://www.sefiles.net/merchant/91/images/site/santana-tandem.jpg"
+    "tag": "gravel",
+    "title": "Merida Silex+ 6000",
+    "desc": "There’s a certain beauty in just riding without watching the time, heading wherever you feel the urge. For those rides, the test and award-winning SILEX makes total sense; Meridas's most comfortable and versatile road bike ever. For even more off-road capability, the SILEX+ comes with sturdy 650B wheels.",
+    "price": 2996,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_M/orgid_275/thumbs/512536_4300454.jpg"
 }]

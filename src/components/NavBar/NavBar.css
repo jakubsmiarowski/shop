@@ -35,12 +35,12 @@ a {
     vertical-align: middle;
 }
 
-.icon-container:hover {
-    color: #C94E50;
-}
-
 .fa-shopping-cart {
     font-size: 27px;
+}
+
+.fa-shopping-cart:hover {
+    color: black;
 }
 
 .cart-items {
