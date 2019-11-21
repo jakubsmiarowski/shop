@@ -29,10 +29,10 @@
 }, {
     "id": 5,
     "tag": "mountain",
-    "title": "Marin Mount Vision 8",
-    "desc": "The Marin Mount Vision 8 is the bike that transforms the whole of the mountain into your playground. Featuring 150mm of travel at the front and the back, with the back being guided by the award winning Nalid R3act 2 Play system, this 650b monster is ready to take on any trail.",
-    "price": 4300,
-    "img": "https://www.bicyclesonline.com.au/assets/full/4702646.jpg?1558923662"
+    "title": "Mondraker DUNE – Enduro",
+    "desc": "The Super Enduro Dune from the famous Spanish bicycle manufacturer Mondraker immediately impresses with selected components. The high-quality suspension mixture of RockShox fork and Fox damper smoothes out all bumps on the trail and ensures full control at all times.",
+    "price": 3306,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_M/orgid_93463/thumbs/499464_4191068.jpg"
 }, {
     "id": 6,
     "tag": "road",
@@ -85,10 +85,10 @@
 }, {
     "id": 13,
     "tag": "triathlon",
-    "title": "Ventum Z Mechanical",
-    "desc": "The Ventum Z is a triathlon bike based on Ventum’s non-traditional, Z-shaped frame.",
-    "price": 3160,
-    "img": "http://cdn.shopify.com/s/files/1/0916/8350/products/Ventum_Z_Mechanical_Vision_Black_30c80b19-fdf8-4e90-b397-c685e386c517_2048x2048.png?v=1520955773"
+    "title": "Cube Aerium C:68 TT SL LOW carbon",
+    "desc": "We're proud of our Aerium triathlon bikes. They're the fastest of their kind on the market, and that's testament to the efforts of our engineers. But what if you want to race time trials on a UCI-compliant machine? Well, we've thought of that too. Meet the all new Cube Aerium C:68 TT - a wind-cheating, PB-busting race bike designed to be the fastest a UCI frame can possibly be.",
+    "price": 5787,
+    "img": "https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/501386_4206361.png"
 }, {
     "id": 14,
     "tag": "triathlon",

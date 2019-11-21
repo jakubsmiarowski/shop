@@ -10,6 +10,8 @@
         "@fortawesome/react-fontawesome": "^0.1.7",
         "bootstrap": "^4.3.1",
         "emotion-theming": "^10.0.19",
+        "firebase": "^7.4.0",
+        "firebase-tools": "^7.8.1",
         "react": "^16.10.2",
         "react-burger-menu": "^2.6.12",
         "react-dom": "^16.10.2",
