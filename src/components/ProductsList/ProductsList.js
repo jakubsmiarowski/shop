@@ -33,9 +33,9 @@ class ProductsList extends React.Component {
         })
         
         return(
-                <Pulse>
-                    {itemList}
-                </Pulse>
+            <Pulse>
+                {itemList}
+            </Pulse>
         )
     }
 }

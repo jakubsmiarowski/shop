@@ -5,26 +5,4 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
-    /*color: white;*/
 }
-
-
-/*
-.body,
-.header,
-.paginator-button {
-    background-color: #4D5052;
-    color: white;
-}
-
-.bike,
-.nav-bar a,
-.products-title,
-.random-bike-title {
-    color: white;
-}
-
-.products,
-.random-bike {
-    background-color: #393939;
-}*/

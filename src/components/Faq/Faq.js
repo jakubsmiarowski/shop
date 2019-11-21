@@ -25,7 +25,6 @@ class Faq extends React.Component {
                         <h5>I have problems with my payment, what should I do?</h5>
                         <p>This website is using third party secure payment system provided by the WIX platform that should work flawlessly. If there are any problems please let me know and I will resolve the problem with the companies that are handling the payments.
                         If you for some reason could not download your purchased project let me know. I will send it to you directly.</p>
-
                     </div>
                 </div>
             </Slide>
