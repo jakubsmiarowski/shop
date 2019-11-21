@@ -30,9 +30,6 @@ const initialState = {
     total: 0,
     clickedProduct: [],
     cartItems: 0,
-    burgerMenu: {
-        isOpen: false
-    }
 };
 
 const reducer = (state = initialState, action) => {

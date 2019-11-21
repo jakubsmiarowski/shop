@@ -20,7 +20,6 @@ a {
     color: #161617;
     margin-right: 10px;
     text-decoration: none;
-    letter-spacing: 4px;
     transition: 0.2s ease;
 }
 
@@ -44,18 +43,18 @@ a {
 }
 
 .cart-items {
-    padding-left: 4px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: #C94E50;
     border-radius: 50%;
-    line-height: 18px;
+    line-height: 23px;
     text-align: center;
     transform: translate(17px, -18px);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     font-weight: 800;
+    letter-spacing: 0;
 }
 
 @media screen and (max-width: 767px) {

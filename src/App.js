@@ -5,6 +5,7 @@ import store from './store/store';
 
 import { MainLayout } from "./containers/MainLayout/MainLayout";
 import { NotFound } from "./components/NotFound/NotFound";
+import Faq from "./components/Faq/Faq";
 import { Contact } from './components/Contact/Contact'
 import { Home } from "./containers/Home/Home";
 import Cart from "./components/Cart/Cart";
@@ -25,6 +26,7 @@ class App extends React.Component {
                 <Route exact path={"/"} component={Home} />
                 <Route exact path={"/contact"} component={Contact} />
                 <Route exact path={"/terms"} component={Terms} />
+                <Route exact path={"/faq"} component={Faq} />
                 <Route exact path={"/cart"} component={Cart} />
                 <Route path={"/product"} component={Product} />
                 <Route component={NotFound} />

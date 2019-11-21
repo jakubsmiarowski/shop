@@ -43,15 +43,10 @@
     background: #C94E50;
     height: 50px;
     width: 150px;
-    border-radius: 10px;
-    color: #161617;
+    color: white;
     display: block;
     font-weight: 700;
     transition: 0.5s ease;
-}
-
-.button-cart:hover {
-    color: #FFFCE1;
 }
 
 @media screen and (max-width: 767px) {

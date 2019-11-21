@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { addToCart} from '../../actions/actions';
+import Zoom from 'react-reveal/Zoom';
 import './Product.css'
 
 class Product extends React.Component {
@@ -27,9 +28,11 @@ class Product extends React.Component {
         })
     
         return (
+          <Zoom cascade>
             <div className="product-container container">
                 {itemList}
             </div>
+          </Zoom>
         )
       }
     }

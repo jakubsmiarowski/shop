@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import Pulse from 'react-reveal/Pulse';
 import * as actions from '../../actions/actions';
 import './SideBar.css';
 
@@ -76,8 +77,9 @@ class SideBar extends React.Component {
 
 
     return (
-
+      <Pulse>
         <form className="bikes-list">
+        
           
         {bikes.map(item => (
           <div key={item.id} className="bike">
@@ -98,13 +100,14 @@ class SideBar extends React.Component {
             id={item.id}
             exact to="/" 
             activeClassName="active" 
-            className="bike reset"
+            className="reset"
             onClick={id => {this.reset(id)}}
           >{item.name}
           </NavLink>
         ))}
         
         </form>
+      </Pulse>
     )
   }
 }

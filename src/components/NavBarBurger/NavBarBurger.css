@@ -63,7 +63,8 @@
 }
 
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+    left: 0;
+    background: rgba(0, 0, 0, 0.0);
 }
 
 @media screen and (max-width: 767px) {
@@ -73,7 +74,7 @@
         position: absolute;
         width: 36px;
         height: 30px;
-        right: 120px;
+        right: 100px;
         top: 36px;
         transition: 1s ease-out;
     }

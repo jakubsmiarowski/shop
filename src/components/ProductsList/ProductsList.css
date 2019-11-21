@@ -14,13 +14,10 @@
 .products {
     width: 300px;
     margin: 20px;
-    background: #dfe6e9;
     color: #C94E50;
     text-align: center;
     position: relative;
-    border: 1px solid #B4BAD2;
-    border-radius: 20px;
-    box-shadow: 0 0 67px -25px #B4BAD2;
+    border: 1px solid #bdc3c7;
 }
 
 .products:hover {
@@ -54,23 +51,20 @@
 }
 
 .products-button {
+    width: 80%;
+    height: 50px;
     background-color: #C94E50;
-    color: #161617;
+    color: #fff;
     font-weight: bold;
     border: none;
     font-size: 13px;
-    border-radius: 8px;
     padding: 5px;
     position: absolute;
     z-index: 3;
-    bottom: 10px;
+    bottom: 20px;
     right: 50%;
     transform: translateX(50%);
     transition: 0.5s ease;
-}
-
-.products-button:hover {
-    color: #FFFCE1;
 }
 
 .paginator-button:hover {

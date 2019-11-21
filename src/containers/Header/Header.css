@@ -1,20 +1,38 @@
-.header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background: #fff;
-    z-index: 5;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    color: #B4BAD2;
-    float: left;
-    height: 100px;
-    width: 100px;
-    background-image: url("https://i.pinimg.com/originals/36/c1/db/36c1dbf12d0110b55426c6594991aae2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #bdc3c7;
+    }
+    
+    .logo {
+        color: #B4BAD2;
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-image: url("https://i.pinimg.com/originals/36/c1/db/36c1dbf12d0110b55426c6594991aae2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .icon-container-mobile {
+        display: none;
+    }
+    
+    @media(max-width: 767px) {
+        .icon-container-mobile {
+            position: absolute;
+            left: 47%;
+            top: 35px;
+            display: inline-flex;
+            vertical-align: middle;
+        }
+        .icon-container-mobile a {
+            color: black;
+        }
+    }

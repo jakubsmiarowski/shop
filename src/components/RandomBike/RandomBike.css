@@ -6,13 +6,10 @@
 .random-bike {
     width: 300px;
     margin: 20px;
-    background: #dfe6e9;
     color: #C94E50;
     text-align: center;
     position: relative;
-    border: 1px solid #B4BAD2;
-    border-radius: 20px;
-    box-shadow: 0 0 67px -25px #B4BAD2;
+    border: 1px solid #bdc3c7;
 }
 
 .random-bike:hover {
